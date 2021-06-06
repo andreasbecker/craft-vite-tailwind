@@ -1,0 +1,137 @@
+#!/usr/bin/env php
+<?php
+/**
+ * @author    nystudio107
+ * @copyright Copyright (c) 2017 nystudio107
+ * @link      https://nystudio107.com/
+ * @package   nystudio107/craft
+ * @since     1.0.0
+ * @license   MIT
+ */
+
+use yii\helpers\Console;
+
+use mikehaertl\shellcommand\Command as ShellCommand;
+
+const INSTALL_PLUGINS = [
+    'seo',
+    'vite',
+    'redactor',
+    'architect'
+];
+
+
+// Set path constants
+define('CRAFT_BASE_PATH', __DIR__);
+define('CRAFT_VENDOR_PATH', CRAFT_BASE_PATH.'/vendor');
+
+// Load Composer's autoloader
+require_once CRAFT_VENDOR_PATH.'/autoload.php';
+
+
+// By default, run the setup script
+if (empty($argv[1])) {
+    setupCraft();
+}
+
+/**
+ * Set up all the things!
+ */
+function setupCraft()
+{
+    // Install the default plugins
+    installPlugins();
+    // Install the NodeJS packages
+    installNodePackages();
+}
+
+/**
+ * Install the default plugins
+ */
+function installPlugins()
+{
+    outputString(PHP_EOL.'Installing plugins', Console::FG_YELLOW);
+    $installPluginCmd = './craft plugin/install ';
+    foreach (INSTALL_PLUGINS as $pluginHandle) {
+        outputString('- installing plugin '.$pluginHandle);
+        executeShellCommand($installPluginCmd . $pluginHandle);
+    }
+}
+
+function installNodePackages()
+{
+    $command = '';
+    if (shellCommandExists('npm')) {
+        $command = 'npm install';
+    }
+
+    outputString(PHP_EOL.'Installing NodeJS packages via '.$command. ' (this may take a while)', Console::FG_YELLOW);
+
+    if (!empty($command)) {
+        $result = executeShellCommand($command);
+        outputString($result);
+    } else {
+        outputString('### unable to install NodeJS packages, yarn/npm not found', Console::FG_RED);
+    }
+}
+
+/**
+ * Output a string to the console, using optional $args to color it, if supported
+ *
+ * @param string $string
+ *
+ * @return mixed
+ */
+function outputString($string)
+{
+    $stream = \STDOUT;
+    if (Console::streamSupportsAnsiColors($stream)) {
+        $args = func_get_args();
+        array_shift($args);
+        $string = Console::ansiFormat($string, $args);
+    }
+
+    return Console::stdout($string.PHP_EOL);
+}
+
+/**
+ * Execute a shell command
+ *
+ * @param string $command
+ *
+ * @return string
+ */
+function executeShellCommand(string $command): string
+{
+    // Create the shell command
+    $shellCommand = new ShellCommand();
+    $shellCommand->setCommand($command);
+
+    // If we don't have proc_open, maybe we've got exec
+    if (!function_exists('proc_open') && function_exists('exec')) {
+        $shellCommand->useExec = true;
+    }
+
+    // Return the result of the command's output or error
+    if ($shellCommand->execute()) {
+        $result = $shellCommand->getOutput();
+    } else {
+        $result = $shellCommand->getError();
+    }
+
+    return $result;
+}
+
+/**
+ * Return whether a shell command exists ir not
+ *
+ * @param string $command
+ *
+ * @return bool
+ */
+function shellCommandExists(string $command): bool
+{
+    $result = executeShellCommand('which '.$command);
+
+    return !empty($result);
+}

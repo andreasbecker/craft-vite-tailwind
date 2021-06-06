@@ -1,6 +1,8 @@
 /.env
 /vendor
 
+/config/project/*
+
 # CRAFT STORAGE
 /storage/*
 !/storage/.gitignore

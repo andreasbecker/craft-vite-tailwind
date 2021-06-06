@@ -3,8 +3,11 @@
   "description": "Craft CMS with Vite and TailwindCSS",
   "license": "Unlicense",
   "require": {
-    "craftcms/cms": "^3.6.4",
-    "nystudio107/craft-vite": "^1.0",
+    "craftcms/cms": "3.6.16",
+    "craftcms/redactor": "2.8.7",
+    "ether/seo": "3.7.3",
+    "nystudio107/craft-vite": "1.0.9",
+    "pennebaker/craft-architect": "2.4.2",
     "vlucas/phpdotenv": "^3.4.0"
   },
   "require-dev": {
@@ -25,6 +28,15 @@
   "scripts": {
     "post-root-package-install": [
       "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+    ],
+    "post-create-project-cmd": [
+      "@php craft setup/welcome"
+    ],
+    "post-update-cmd": [
+        "@php craft clear-caches/all"
+    ],
+    "post-install-cmd": [
+        "@php craft clear-caches/all"
     ]
   }
 }
