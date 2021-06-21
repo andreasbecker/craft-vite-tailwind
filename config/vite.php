@@ -7,7 +7,7 @@ return [
     'manifestPath' => '@webroot/dist/manifest.json',
     'devServerPublic' => 'http://localhost:3000/',
     'serverPublic' => App::env('PRIMARY_SITE_URL') . '/dist/',
-    'errorEntry' => '',
+    'errorEntry' => '/src/js/app.js',
     'cacheKeySuffix' => '',
     'devServerInternal' => '',
     'checkDevServer' => false,

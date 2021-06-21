@@ -20,6 +20,8 @@ return [
     // Whether generated URLs should omit "index.php"
     'omitScriptNameInUrls' => true,
 
+    'limitAutoSlugsToAscii' => true,
+
     // The URI segment that tells Craft to load the control panel
     'cpTrigger' => App::env('CP_TRIGGER') ?: 'admin',
 
@@ -34,4 +36,9 @@ return [
 
     // Whether crawlers should be allowed to index pages and following links
     'disallowRobots' => !$isProd,
+
+    'aliases' => [
+        '@basePath' => getenv('BASE_PATH'),
+        '@uploadPath' => getenv('UPLOAD_PATH'),
+    ],
 ];

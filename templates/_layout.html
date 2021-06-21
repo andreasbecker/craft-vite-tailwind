@@ -5,10 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     {% hook "seo" %}
     {# {{ sprig.script }} #}
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.2/dist/alpine.min.js" defer></script>
     {{ craft.vite.script("/src/js/app.js") }}
   </head>
   <body class="antialiased bg-body text-body font-body">
 
+    {% if craft.app.config.general.devMode %}
+    <div class="bg-white fixed pin-t pin-l p-2 text-green" style="z-index: 10000">
+        <div class="sm:hidden">XS</div>
+        <div class="hidden sm:block md:hidden">SM</div>
+        <div class="hidden md:block lg:hidden">MD</div>
+        <div class="hidden lg:block xl:hidden">LG</div>
+        <div class="hidden xl:block">XL</div>
+    </div>
+    
+    {% endif %}
 
     {% block content %}
     
