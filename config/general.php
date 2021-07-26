@@ -38,7 +38,7 @@ return [
     'disallowRobots' => !$isProd,
 
     'aliases' => [
-        '@basePath' => getenv('BASE_PATH'),
-        '@uploadPath' => getenv('UPLOAD_PATH'),
+        '@basePath' => App::env('BASE_PATH'),
+        '@uploadPath' => App::env('UPLOAD_PATH'),
     ],
 ];

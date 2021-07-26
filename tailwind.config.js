@@ -24,8 +24,8 @@ module.exports = {
         },
         fontFamily: {
             sans: [
-              'Nunito Sans',
-              ...defaultTheme.fontFamily.sans,
+                'Nunito Sans',
+                ...defaultTheme.fontFamily.sans,
             ],
             serif: [
                 'Nunito Sans',

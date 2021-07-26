@@ -1,35 +1,29 @@
 <!DOCTYPE html>
 <html lang="de">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    {% hook "seo" %}
-    {# {{ sprig.script }} #}
-    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.2/dist/alpine.min.js" defer></script>
-    {{ craft.vite.script("/src/js/app.js") }}
-  </head>
-  <body class="antialiased selection:bg-one selection:text-white selection:text-opacity-50 bg-white {{ bodyclass is defined ? bodyclass }}">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		{% hook "seo" %}
+		{# {{ sprig.script }} #}
+		<script defer src="https://unpkg.com/alpinejs@3.2.2/dist/cdn.min.js"></script>
+		{{ craft.vite.script("/src/js/app.js") }}
+	</head>
+	<body class="antialiased selection:bg-one selection:text-white selection:text-opacity-50 bg-white {{ bodyclass is defined ? bodyclass }}">
 
-    {% if craft.app.config.general.devMode %}
-    <div class="bg-white fixed top-0 left-0 p-2 text-black z-[10000]">
-        <div class="sm:hidden">XS</div>
-        <div class="hidden sm:block md:hidden">SM</div>
-        <div class="hidden md:block lg:hidden">MD</div>
-        <div class="hidden lg:block xl:hidden">LG</div>
-        <div class="hidden xl:block 2xl:hidden">XL</div>
-        <div class="hidden 2xl:block">2XL</div>
-    </div>
-    
-    {% endif %}
+		{% if craft.app.config.general.devMode %}
+			<div class="bg-white fixed top-0 left-0 p-2 text-black z-[10000]">
+				<div class="sm:hidden">XS</div>
+				<div class="hidden sm:block md:hidden">SM</div>
+				<div class="hidden md:block lg:hidden">MD</div>
+				<div class="hidden lg:block xl:hidden">LG</div>
+				<div class="hidden xl:block 2xl:hidden">XL</div>
+				<div class="hidden 2xl:block">2XL</div>
+			</div>
 
-    {% block content %}
-    
-    
-    {% endblock %}
+		{% endif %}
+
+		{% block content %}{% endblock %}
 
 
-</body>
+	</body>
 </html>
-
-
-

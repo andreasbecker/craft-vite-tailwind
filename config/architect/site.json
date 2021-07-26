@@ -67,16 +67,6 @@
         },
         {
             "group": "Common",
-            "name": "Text",
-            "handle": "body",
-            "instructions": "",
-            "type": "craft\\ckeditor\\Field",
-            "purifierConfig": "",
-            "purifyHtml": "1",
-            "columnType": "text"
-        },
-        {
-            "group": "Common",
             "name": "Topline",
             "handle": "topline",
             "instructions": "",
