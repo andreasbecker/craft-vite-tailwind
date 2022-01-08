@@ -1,4 +1,4 @@
-dateModified: 1638620973
+dateModified: 1641658470
 email:
   fromEmail: andreas@frischkraft.de
   fromName: Boilerplate
@@ -14,9 +14,9 @@ meta:
     9989e239-1788-4ea2-9611-ff34ff765bc1: SEO # SEO
     65171297-7276-41ea-ba6d-dbb4b55fbfdc: Seiten # Seiten
     b6bc1140-7710-4ffd-8574-98475ed75b60: Boilerplate # Boilerplate
+    bab77e2e-724c-47ff-bba7-cc34c5743110: Common # Common
     bb8805d1-ef12-494d-bbc1-8d3668cf097f: Common # Common
     c689235a-365f-4ae6-bcc5-4d1586dc6fd2: Startseite # Startseite
-    d879194a-d28d-41a5-b304-818200f7ae05: Hauptseite # Hauptseite
 plugins:
   redactor:
     edition: standard
