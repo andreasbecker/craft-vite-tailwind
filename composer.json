@@ -3,11 +3,10 @@
   "description": "Craft CMS with Vite and TailwindCSS",
   "license": "Unlicense",
   "require": {
-    "craftcms/cms": "3.6.16",
-    "craftcms/redactor": "2.8.7",
-    "ether/seo": "3.7.3",
-    "nystudio107/craft-vite": "1.0.9",
-    "pennebaker/craft-architect": "2.4.2",
+    "craftcms/cms": "3.7.24",
+    "craftcms/redactor": "2.8.8",
+    "ether/seo": "3.7.4",
+    "nystudio107/craft-vite": "1.0.17",
     "vlucas/phpdotenv": "^3.4.0"
   },
   "require-dev": {

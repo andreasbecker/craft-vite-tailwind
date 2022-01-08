@@ -1,0 +1,23 @@
+enableVersioning: true
+handle: pages
+name: Seiten
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primäre eintrag Seite'
+      -
+        - urlFormat
+        - '{url}'
+propagationMethod: all
+siteSettings:
+  6ddfbcee-cb13-4044-85d4-2e3f68a773bf: # Craft Boilerplate
+    enabledByDefault: true
+    hasUrls: true
+    template: pages/_entry
+    uriFormat: '{% if object.level == 1 %}{slug}{% else %}{parent.uri}/{slug}{% endif %}'
+structure:
+  maxLevels: 2
+  uid: e05f7c25-2b45-4d05-a419-4bb8cc60570b
+type: structure

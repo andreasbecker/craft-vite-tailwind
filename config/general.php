@@ -13,6 +13,28 @@ use craft\helpers\App;
 $isDev = App::env('ENVIRONMENT') === 'dev';
 $isProd = App::env('ENVIRONMENT') === 'production';
 
+$__headers__ = [];
+
+// @see http://php.net/manual/de/function.getallheaders.php#84262
+if (function_exists('getallheaders')) {
+    $__headers__ = getallheaders();
+}
+else {
+    foreach ($_SERVER as $name => $value) {
+        if (substr($name, 0, 5) == 'HTTP_') {
+            $__headers__[str_replace(' ', '-', ucwords(strtolower(str_replace('_', ' ', substr($name, 5)))))] = $value;
+        }
+    }
+}
+
+$__proto__ = 'http:';
+if (isset($_SERVER['HTTPS']) && !empty($_SERVER['HTTPS'])) {
+    $__proto__ = 'https:';
+}
+
+$__host__ = !empty($__headers__['Host']) ? $__headers__['Host'] : $__headers__['host'];
+$__host__ = '//' . $__host__ . '/';
+
 return [
     // Default Week Start Day (0 = Sunday, 1 = Monday...)
     'defaultWeekStartDay' => 1,
@@ -38,7 +60,8 @@ return [
     'disallowRobots' => !$isProd,
 
     'aliases' => [
-        '@basePath' => App::env('BASE_PATH'),
-        '@uploadPath' => App::env('UPLOAD_PATH'),
+        '@basePath' => $_SERVER['DOCUMENT_ROOT'] . DIRECTORY_SEPARATOR,
+        '@baseUrl' => $__proto__ . $__host__,
+        '@uploadsUrl' => '@baseUrl/uploads',
     ],
 ];

@@ -1,0 +1,18 @@
+contentColumnType: text
+fieldGroup: bb8805d1-ef12-494d-bbc1-8d3668cf097f # Common
+handle: ueberschrift
+instructions: ''
+name: Überschrift
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

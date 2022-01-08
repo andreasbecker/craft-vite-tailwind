@@ -1,0 +1,44 @@
+dateModified: 1638620973
+email:
+  fromEmail: andreas@frischkraft.de
+  fromName: Boilerplate
+  transportType: craft\mail\transportadapters\Sendmail
+meta:
+  __names__:
+    1a4fd767-cdbd-435f-9d5c-3cfccfd95087: Überschrift # Überschrift
+    2b4b7f4a-8cba-4063-8112-ab4c475dfbb8: Topline # Topline
+    6bee7349-a286-4f61-be1d-b84d9abdfffc: Startseite # Startseite
+    6ddfbcee-cb13-4044-85d4-2e3f68a773bf: 'Craft Boilerplate' # Craft Boilerplate
+    06df0512-5052-4fc2-9371-bf8b567191c7: Standardseite # Standardseite
+    60ea60f4-d351-4a83-87fb-2db87df0844a: Medien # Medien
+    9989e239-1788-4ea2-9611-ff34ff765bc1: SEO # SEO
+    65171297-7276-41ea-ba6d-dbb4b55fbfdc: Seiten # Seiten
+    b6bc1140-7710-4ffd-8574-98475ed75b60: Boilerplate # Boilerplate
+    bb8805d1-ef12-494d-bbc1-8d3668cf097f: Common # Common
+    c689235a-365f-4ae6-bcc5-4d1586dc6fd2: Startseite # Startseite
+    d879194a-d28d-41a5-b304-818200f7ae05: Hauptseite # Hauptseite
+plugins:
+  redactor:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.3.0
+  seo:
+    edition: standard
+    enabled: true
+    schemaVersion: 3.2.0
+  vite:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+system:
+  edition: solo
+  live: true
+  name: Boilerplate
+  schemaVersion: 3.7.8
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  requireEmailVerification: true

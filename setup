@@ -17,7 +17,6 @@ const INSTALL_PLUGINS = [
     'seo',
     'vite',
     'redactor',
-    'architect'
 ];
 
 

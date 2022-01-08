@@ -1,0 +1,9 @@
+baseUrl: $PRIMARY_SITE_URL
+enabled: true
+handle: default
+hasUrls: true
+language: de
+name: 'Craft Boilerplate'
+primary: true
+siteGroup: b6bc1140-7710-4ffd-8574-98475ed75b60 # Boilerplate
+sortOrder: 1
