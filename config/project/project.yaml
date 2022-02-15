@@ -1,4 +1,4 @@
-dateModified: 1641658470
+dateModified: 1644918009
 email:
   fromEmail: andreas@frischkraft.de
   fromName: Boilerplate
@@ -34,7 +34,7 @@ system:
   edition: solo
   live: true
   name: Boilerplate
-  schemaVersion: 3.7.8
+  schemaVersion: 3.7.32
   timeZone: America/Los_Angeles
 users:
   allowPublicRegistration: false
