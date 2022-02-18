@@ -1,0 +1,10 @@
+{
+    "trailingComma": "es5",
+    "tabWidth": 4,
+    "semi": false,
+    "bracketSameLine": true,
+    "printWidth": 500,
+    "twigPrintWidth": 500,
+    "twigMultiTags": ["nav,endnav", "switch,case,default,endswitch", "ifchildren,endifchildren", "cache,endcache"],
+    "plugins": ["./node_modules/prettier-plugin-twig-melody"]
+}

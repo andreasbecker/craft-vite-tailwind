@@ -1,15 +1,23 @@
 {
-  "name": "frischkraft",
-  "devDependencies": {
-    "@vitejs/plugin-legacy": "^1.6.4",
-    "autoprefixer": "^10.4.2",
-    "postcss": "^8.4.5",
-    "tailwindcss": "^3.0.12",
-    "vite": "^2.7.10",
-    "vite-plugin-restart": "0.1.0"
-  },
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build"
+    "name": "frischkraft",
+    "devDependencies": {
+      "@vitejs/plugin-legacy": "^1.7.1",
+      "autoprefixer": "^10.4.2",
+      "postcss": "^8.4.6",
+      "prettier": "^2.5.1",
+      "prettier-plugin-tailwindcss": "^0.1.7",
+      "tailwindcss": "^3.0.23",
+      "vite": "^2.8.4",
+      "vite-plugin-restart": "0.1.1"
+    },
+    "scripts": {
+      "dev": "vite",
+      "build": "vite build"
+    },
+    "dependencies": {
+      "@tailwindcss/forms": "^0.4.0",
+      "@tailwindcss/typography": "^0.5.2",
+      "prettier-plugin-twig-melody": "^0.4.6"
+    }
   }
-}
+  
