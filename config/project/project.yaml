@@ -1,8 +1,16 @@
-dateModified: 1645198620
+dateModified: 1670409614
 email:
   fromEmail: andreas@frischkraft.de
   fromName: Boilerplate
   transportType: craft\mail\transportadapters\Sendmail
+fs:
+  media:
+    hasUrls: true
+    name: Medien
+    settings:
+      path: '@webroot/uploads'
+    type: craft\fs\Local
+    url: '@uploadsUrl'
 meta:
   __names__:
     1a4fd767-cdbd-435f-9d5c-3cfccfd95087: Überschrift # Überschrift
@@ -11,21 +19,12 @@ meta:
     6ddfbcee-cb13-4044-85d4-2e3f68a773bf: 'Craft Boilerplate' # Craft Boilerplate
     06df0512-5052-4fc2-9371-bf8b567191c7: Standardseite # Standardseite
     60ea60f4-d351-4a83-87fb-2db87df0844a: Medien # Medien
-    9989e239-1788-4ea2-9611-ff34ff765bc1: SEO # SEO
     65171297-7276-41ea-ba6d-dbb4b55fbfdc: Seiten # Seiten
     b6bc1140-7710-4ffd-8574-98475ed75b60: Boilerplate # Boilerplate
-    bab77e2e-724c-47ff-bba7-cc34c5743110: Common # Common
     bb8805d1-ef12-494d-bbc1-8d3668cf097f: Common # Common
+    bdf7d7be-212e-4725-b11e-eddbdeaec225: 'Public Schema' # Public Schema
     c689235a-365f-4ae6-bcc5-4d1586dc6fd2: Startseite # Startseite
 plugins:
-  redactor:
-    edition: standard
-    enabled: true
-    schemaVersion: 2.3.0
-  seo:
-    edition: standard
-    enabled: true
-    schemaVersion: 3.2.0
   vite:
     edition: standard
     enabled: true
@@ -34,10 +33,12 @@ system:
   edition: solo
   live: true
   name: Boilerplate
-  schemaVersion: 3.7.33
-  timeZone: America/Los_Angeles
+  retryDuration: null
+  schemaVersion: 4.0.0.9
+  timeZone: Europe/Berlin
 users:
   allowPublicRegistration: false
+  deactivateByDefault: false
   defaultGroup: null
   photoSubpath: null
   photoVolumeUid: null

@@ -1,15 +1,24 @@
 {
   "src/js/app-legacy.js": {
-    "file": "assets/app-legacy.be09c2f1.js",
+    "file": "assets/app-legacy.7d1a9d12.js",
     "src": "src/js/app-legacy.js",
     "isEntry": true
   },
+  "vite/legacy-polyfills-legacy": {
+    "file": "assets/polyfills-legacy.907dbd91.js",
+    "src": "vite/legacy-polyfills-legacy",
+    "isEntry": true
+  },
   "src/js/app.js": {
-    "file": "assets/app.8603062c.js",
+    "file": "assets/app.86a192b7.js",
     "src": "src/js/app.js",
     "isEntry": true,
     "css": [
-      "assets/app.399b0ac7.css"
+      "assets/app.4ba77124.css"
     ]
+  },
+  "src/js/app.css": {
+    "file": "assets/app.4ba77124.css",
+    "src": "src/js/app.css"
   }
 }

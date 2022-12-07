@@ -23,7 +23,7 @@ fieldLayouts:
             step: null
             tip: null
             title: null
-            type: craft\fieldlayoutelements\EntryTitleField
+            type: craft\fieldlayoutelements\entries\EntryTitleField
             warning: null
             width: 100
         name: Inhalt
@@ -31,7 +31,7 @@ fieldLayouts:
       -
         elements:
           -
-            fieldUid: 9989e239-1788-4ea2-9611-ff34ff765bc1 # SEO
+            fieldUid: 9989e239-1788-4ea2-9611-ff34ff765bc1
             instructions: null
             label: null
             required: false

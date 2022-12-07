@@ -1,33 +1,31 @@
-@import url('https://fonts.googleapis.com/css2?family=Lora:ital@0;1&family=Poppins:wght@300;400;700&display=swap');
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer components {
     .btn {
-        @apply py-2 px-4 bg-one text-white font-semibold rounded shadow-md hover:bg-one-dark focus:outline-none focus:ring-2 focus:ring-one-light focus:ring-opacity-75;
+        @apply rounded bg-one py-2 px-4 font-semibold text-white shadow-md hover:bg-one-dark focus:outline-none focus:ring-2 focus:ring-one-light focus:ring-opacity-75;
     }
     .topline {
-        @apply uppercase text-xs tracking-widest font-semibold inline-block mb-2
+        @apply mb-2 inline-block text-xs font-semibold uppercase tracking-widest;
     }
     .h1 {
-        @apply text-4xl font-serif tracking-tight sm:text-5xl lg:text-6xl
+        @apply font-serif text-4xl tracking-tight sm:text-5xl lg:text-6xl;
     }
 
     .h2 {
-        @apply text-3xl font-serif tracking-tight sm:text-4xl lg:text-5xl
+        @apply font-serif text-3xl tracking-tight sm:text-4xl lg:text-5xl;
     }
     .editor p {
-        @apply mb-4
+        @apply mb-4;
     }
     .editor a {
-        @apply text-one hover:text-one-dark
+        @apply text-one hover:text-one-dark;
     }
     .editor ul {
-        @apply list-disc list-inside
+        @apply list-inside list-disc;
     }
     .editor li {
-        @apply mb-2
+        @apply mb-2;
     }
 }
