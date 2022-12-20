@@ -19,7 +19,7 @@ module.exports = {
             },
             fontFamily: {
                 sans: ["Poppins", ...defaultTheme.fontFamily.sans],
-                serif: ['Lora', ...defaultTheme.fontFamily.serif],
+                serif: ["Lora", ...defaultTheme.fontFamily.serif],
             },
         },
         container: {
@@ -45,9 +45,6 @@ module.exports = {
             "2xl": "1280px",
             // => @media (min-width: 1280px) { ... }
         },
-    },
-    variants: {
-        extend: {},
     },
     plugins: [require("@tailwindcss/typography")],
 }

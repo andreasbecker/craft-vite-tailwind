@@ -1,0 +1,259 @@
+field: 09d2a6ba-3fed-4b21-9b93-9ae69ad011d0 # Seiten-Blöcke
+fieldLayouts:
+  af97759d-475c-4722-a2f1-2c61f43f969f:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: c89375bd-d305-4b89-927a-f8021b892145 # Anker
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 191d5e2c-4ab2-4b3f-99bf-2f8e6aa197e2
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: 44c2e107-819a-403b-a4bd-90754eb9874e # Stichzeile
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 19a3276c-d246-4238-872f-93a2b80fa562
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 10004a53-a0c0-4d68-8912-ba30e12ccfbb # Überschrift
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9b09d2f5-c023-4d87-bbcc-f67cf2c5d06b
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 7256eccc-68c6-4b76-abc1-e48dd566fdd5 # Fotos
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: bc08bcfb-63d3-464e-93a4-831086af0c3c
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 401c0339-5a6c-492a-a9f3-70d1d3d80e57 # YouTube-Video
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6f167ea6-632e-4813-8483-6ef1d843230e
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: f131501e-a413-4ae0-add2-8aa059cea708 # Liste
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 970f91c4-690e-4db8-aecb-6160320d16f4
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 7c7a2536-3795-4778-8b26-16fcdedd7dfb
+        userCondition: null
+fields:
+  44c2e107-819a-403b-a4bd-90754eb9874e: # Stichzeile
+    columnSuffix: gggfypxc
+    contentColumnType: text
+    fieldGroup: null
+    handle: topline
+    instructions: null
+    name: Stichzeile
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  401c0339-5a6c-492a-a9f3-70d1d3d80e57: # YouTube-Video
+    columnSuffix: wykktxou
+    contentColumnType: text
+    fieldGroup: null
+    handle: video
+    instructions: "Bitte hier die ID des gewünschten YouTube-Videos eintragen, z. B. `PN2F1zxOC8w`\r\n**Hinweis:** Das Video ersetzt die ggf. hinterlegten Fotos im vorherigen Feld."
+    name: YouTube-Video
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  7256eccc-68c6-4b76-abc1-e48dd566fdd5: # Fotos
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: photos
+    instructions: null
+    name: Fotos
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      allowSubfolders: false
+      allowUploads: true
+      allowedKinds:
+        - image
+      defaultUploadLocationSource: 'volume:60ea60f4-d351-4a83-87fb-2db87df0844a' # Medien
+      defaultUploadLocationSubpath: null
+      localizeRelations: false
+      maxRelations: 2
+      minRelations: null
+      previewMode: full
+      restrictFiles: true
+      restrictLocation: true
+      restrictedDefaultUploadSubpath: null
+      restrictedLocationSource: 'volume:60ea60f4-d351-4a83-87fb-2db87df0844a' # Medien
+      restrictedLocationSubpath: null
+      selectionCondition:
+        __assoc__:
+          -
+            - elementType
+            - craft\elements\Asset
+          -
+            - fieldContext
+            - global
+          -
+            - class
+            - craft\elements\conditions\assets\AssetCondition
+      selectionLabel: 'Foto(s) hinzufügen'
+      showSiteMenu: true
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      source: null
+      sources: '*'
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  10004a53-a0c0-4d68-8912-ba30e12ccfbb: # Überschrift
+    columnSuffix: cfueylzg
+    contentColumnType: text
+    fieldGroup: null
+    handle: headline
+    instructions: null
+    name: Überschrift
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  c89375bd-d305-4b89-927a-f8021b892145: # Anker
+    columnSuffix: dkswxsth
+    contentColumnType: text
+    fieldGroup: null
+    handle: anchor
+    instructions: 'Hier können Sie eine Anker-ID angeben, z. B. `schulungen`. Sie können dann in einem anderen Block auf diesen Anker verweisen, z. B. https://becker-gruppe.com/lernen#schulungen'
+    name: Anker
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  f131501e-a413-4ae0-add2-8aa059cea708: # Liste
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: list
+    instructions: null
+    name: Liste
+    searchable: false
+    settings:
+      blockTypeFields: 0
+      changedFieldIndicator: 817501096
+      columns:
+        __assoc__:
+          -
+            - 62774804-4122-42b1-99b4-80391e51a517 # Icon
+            -
+              __assoc__:
+                -
+                  - width
+                  - ''
+          -
+            - 0b6a3d27-cf25-4c7b-9c1a-b36fdae1b496 # Überschrift
+            -
+              __assoc__:
+                -
+                  - width
+                  - ''
+          -
+            - dc887b28-3f0a-4274-b1d8-95fe6a7c47e1 # Text
+            -
+              __assoc__:
+                -
+                  - width
+                  - ''
+      contentTable: '{{%stc_10_list}}'
+      fieldLayout: row
+      maxRows: null
+      minRows: null
+      propagationKeyFormat: null
+      propagationMethod: all
+      selectionLabel: 'Listenelement hinzufügen'
+      staticField: null
+    translationKeyFormat: null
+    translationMethod: none
+    type: verbb\supertable\fields\SuperTableField
+handle: mediainfo
+name: 'Medien | Liste'
+sortOrder: 9

@@ -1,0 +1,106 @@
+field: 09d2a6ba-3fed-4b21-9b93-9ae69ad011d0 # Seiten-Blöcke
+fieldLayouts:
+  e86afb6b-ff81-423e-91f8-c6e4845d9993:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 653f5610-c4f2-4cec-b6ef-b30672e2de11 # Überschrift
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 83130b69-19bb-413a-ba9d-8a62f70c8adb
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 5f1f454d-8483-4398-9a65-5c2234e7c230 # Logos
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c8293931-d7db-48be-805b-9cdc65cc39f0
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: c8b37288-3d3b-4ef2-a6e3-43fc8d341b7d
+        userCondition: null
+fields:
+  5f1f454d-8483-4398-9a65-5c2234e7c230: # Logos
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: logos
+    instructions: null
+    name: Logos
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      allowSubfolders: false
+      allowUploads: true
+      allowedKinds:
+        - image
+      defaultUploadLocationSource: 'volume:60ea60f4-d351-4a83-87fb-2db87df0844a' # Medien
+      defaultUploadLocationSubpath: null
+      localizeRelations: false
+      maxRelations: null
+      minRelations: null
+      previewMode: full
+      restrictFiles: true
+      restrictLocation: true
+      restrictedDefaultUploadSubpath: null
+      restrictedLocationSource: 'volume:60ea60f4-d351-4a83-87fb-2db87df0844a' # Medien
+      restrictedLocationSubpath: null
+      selectionCondition:
+        __assoc__:
+          -
+            - elementType
+            - craft\elements\Asset
+          -
+            - fieldContext
+            - global
+          -
+            - class
+            - craft\elements\conditions\assets\AssetCondition
+      selectionLabel: 'Logo hinzufügen'
+      showSiteMenu: true
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      source: null
+      sources: '*'
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  653f5610-c4f2-4cec-b6ef-b30672e2de11: # Überschrift
+    columnSuffix: droswyfd
+    contentColumnType: text
+    fieldGroup: null
+    handle: headline
+    instructions: null
+    name: Überschrift
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: logoslider
+name: Logoleiste
+sortOrder: 17

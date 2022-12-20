@@ -1,0 +1,399 @@
+field: 09d2a6ba-3fed-4b21-9b93-9ae69ad011d0 # Seiten-Blöcke
+fieldLayouts:
+  7d26ff9b-fa14-4b56-a7e8-4c9db69bda56:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 38c815dc-a563-4269-b33b-ba7db1c576c9 # Mit Hintergrundfarbe anzeigen
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: efa19987-0e72-48b1-8e58-d4904a844ce1
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: 30afc5cc-e58d-4aae-b3e4-6afc885ab460 # Anker
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 83cee442-4795-4bdc-a993-ca8e20e031e9
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: 4d47a3ed-a2e3-488b-b44d-25bcb73e3fa5 # Abstand
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 514e5e10-5a98-4e81-80fc-c75c84141e22
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: a1b33810-c55f-436c-8328-4b8c11fa8c33 # Stichzeile
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 174ecfda-9a7d-4c77-a3a3-58198072ea67
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 94a0f51b-ff7b-47f3-b76c-e3463fe96ae3 # Überschrift
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 39cd16f5-6a8d-496e-8268-7ac1ccc3cd4e
+            userCondition: null
+            warning: null
+            width: 75
+          -
+            elementCondition: null
+            fieldUid: b0b78ea9-4a92-42e5-8814-41541540f6c6 # Überschrift Größe
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a97acb1a-1f0a-4e04-93cd-ef2836268048
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            elementCondition: null
+            fieldUid: 43437b3d-75d4-4b0e-b865-e4164d84d2d3 # Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 136efcb0-0140-41b2-9744-da775ae03e47
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: d41acb9e-b9d6-459b-9b46-b97002532d32 # Button
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 01700709-c74f-4078-a75a-83379aadc4a1
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 85cfa7a8-8f79-4ac3-808a-300a09314853 # Grafik oder Text
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2bde80b7-49fb-48fa-bc70-94c5dcf73997
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: a835db50-c1e1-4e24-a580-7a79c718950c
+        userCondition: null
+fields:
+  4d47a3ed-a2e3-488b-b44d-25bcb73e3fa5: # Abstand
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: padding
+    instructions: 'Hier kann der Abstand dieses Blocks bestimmt werden, falls die Inhalte näher oder ferner zum Vorgänger- oder Nachfolger-Block dargestellt werden sollen.'
+    name: Abstand
+    searchable: false
+    settings:
+      blockTypeFields: 0
+      changedFieldIndicator: 1719929380
+      columns:
+        __assoc__:
+          -
+            - c8037b30-8030-488f-a7db-a5cab78ce7f5 # Oben
+            -
+              __assoc__:
+                -
+                  - width
+                  - ''
+          -
+            - 84a1b406-dee1-4c25-b237-2d1d74e902e2 # Unten
+            -
+              __assoc__:
+                -
+                  - width
+                  - ''
+      contentTable: '{{%stc_6_padding}}'
+      fieldLayout: table
+      maxRows: null
+      minRows: null
+      propagationKeyFormat: null
+      propagationMethod: all
+      selectionLabel: null
+      staticField: true
+    translationKeyFormat: null
+    translationMethod: none
+    type: verbb\supertable\fields\SuperTableField
+  30afc5cc-e58d-4aae-b3e4-6afc885ab460: # Anker
+    columnSuffix: pnrvoejl
+    contentColumnType: text
+    fieldGroup: null
+    handle: anchor
+    instructions: 'Hier können Sie eine Anker-ID angeben, z. B. `schulungen`. Sie können dann in einem anderen Block auf diesen Anker verweisen, z. B. https://becker-gruppe.com/lernen#schulungen'
+    name: Anker
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: true
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  38c815dc-a563-4269-b33b-ba7db1c576c9: # Mit Hintergrundfarbe anzeigen
+    columnSuffix: yxglpwrv
+    contentColumnType: boolean
+    fieldGroup: null
+    handle: hasBackground
+    instructions: null
+    name: 'Mit Hintergrundfarbe anzeigen'
+    searchable: false
+    settings:
+      default: false
+      offLabel: null
+      onLabel: null
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Lightswitch
+  85cfa7a8-8f79-4ac3-808a-300a09314853: # Grafik oder Text
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: contents
+    instructions: null
+    name: 'Grafik oder Text'
+    searchable: false
+    settings:
+      blockTypeFields: 0
+      changedFieldIndicator: 1901906138
+      columns:
+        __assoc__:
+          -
+            - 180467f8-c501-45a4-b392-b569c2f5a280 # Grafik(en)
+            -
+              __assoc__:
+                -
+                  - width
+                  - ''
+          -
+            - de7addaf-cbc6-46f8-a82c-3d0fdeb3fbcc # Text
+            -
+              __assoc__:
+                -
+                  - width
+                  - ''
+      contentTable: '{{%stc_6_contents}}'
+      fieldLayout: row
+      maxRows: null
+      minRows: null
+      propagationKeyFormat: null
+      propagationMethod: all
+      selectionLabel: 'Inhalt hinzufügen'
+      staticField: null
+    translationKeyFormat: null
+    translationMethod: none
+    type: verbb\supertable\fields\SuperTableField
+  94a0f51b-ff7b-47f3-b76c-e3463fe96ae3: # Überschrift
+    columnSuffix: kqnjrxsc
+    contentColumnType: text
+    fieldGroup: null
+    handle: headline
+    instructions: null
+    name: Überschrift
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  43437b3d-75d4-4b0e-b865-e4164d84d2d3: # Text
+    columnSuffix: wbbakkwc
+    contentColumnType: text
+    fieldGroup: null
+    handle: text
+    instructions: null
+    name: Text
+    searchable: false
+    settings:
+      availableTransforms: ''
+      availableVolumes: '*'
+      columnType: text
+      configSelectionMode: choose
+      defaultTransform: ''
+      manualConfig: ''
+      purifierConfig: null
+      purifyHtml: true
+      redactorConfig: Simple.json
+      removeEmptyTags: true
+      removeInlineStyles: true
+      removeNbsp: true
+      showHtmlButtonForNonAdmins: false
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      uiMode: enlarged
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
+  a1b33810-c55f-436c-8328-4b8c11fa8c33: # Stichzeile
+    columnSuffix: hyjnloup
+    contentColumnType: text
+    fieldGroup: null
+    handle: topline
+    instructions: null
+    name: Stichzeile
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  b0b78ea9-4a92-42e5-8814-41541540f6c6: # Überschrift Größe
+    columnSuffix: mzvhdkyx
+    contentColumnType: string
+    fieldGroup: null
+    handle: headlineSize
+    instructions: null
+    name: 'Überschrift Größe'
+    searchable: false
+    settings:
+      options:
+        -
+          __assoc__:
+            -
+              - label
+              - Klein
+            -
+              - value
+              - small
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Groß
+            -
+              - value
+              - large
+            -
+              - default
+              - ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Dropdown
+  d41acb9e-b9d6-459b-9b46-b97002532d32: # Button
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: button
+    instructions: null
+    name: Button
+    searchable: false
+    settings:
+      allowCustomText: true
+      allowTarget: false
+      autoNoReferrer: false
+      customTextMaxLength: 0
+      customTextRequired: false
+      defaultLinkName: entry
+      defaultText: ''
+      enableAllLinkTypes: true
+      enableAriaLabel: false
+      enableElementCache: false
+      enableTitle: false
+      typeSettings:
+        asset:
+          allowCrossSiteLink: false
+          allowCustomQuery: false
+          enabled: false
+          sources: '*'
+        category:
+          allowCrossSiteLink: false
+          allowCustomQuery: false
+          enabled: false
+          sources: '*'
+        custom:
+          allowAliases: false
+          disableValidation: false
+          enabled: false
+        email:
+          allowAliases: false
+          disableValidation: false
+          enabled: false
+        entry:
+          allowCrossSiteLink: false
+          allowCustomQuery: false
+          enabled: false
+          sources: '*'
+        site:
+          enabled: false
+          sites: '*'
+        tel:
+          allowAliases: false
+          disableValidation: false
+          enabled: false
+        url:
+          allowAliases: false
+          disableValidation: false
+          enabled: false
+        user:
+          allowCrossSiteLink: false
+          allowCustomQuery: false
+          enabled: false
+          sources: '*'
+    translationKeyFormat: null
+    translationMethod: none
+    type: lenz\linkfield\fields\LinkField
+handle: contentHalf
+name: 'Text | Bild od. Text'
+sortOrder: 6

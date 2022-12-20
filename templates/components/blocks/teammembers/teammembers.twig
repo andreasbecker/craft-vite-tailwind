@@ -1,0 +1,80 @@
+{% set items = items ?? block.members.all() ?? null %}
+{% set hasBackground = hasBackground ?? block.hasBackground ?? null %}
+{% set headline = headline ?? block.headline ?? null %}
+{% set text = text ?? block.text ?? null %}
+{% set relatedCats = [] %}
+
+{% if not items %}
+    {% set items = craft.entries.section('team').all() %}
+    {% set relatedCats = craft.categories.relatedTo(items).all() %}
+{% endif %}
+
+<section class="py-14 md:py-28 {{ hasBackground ? 'bg-black' }}">
+    <div class="container px-14 md:px-28 {{ hasBackground ? 'text-white' }}">
+        {% if headline or text %}
+            <div class="mb-20">
+                {% if headline %}
+                    <h2 class="headline max-w-xl mb-4">
+                        {{ headline }}
+                    </h2>
+                {% endif %}
+                {% if text %}
+                    <p class="max-w-xl">
+                        {{ text }}
+                    </p>
+                {% endif %}
+            </div>
+        {% endif %}
+
+        {% for category in relatedCats %}
+            <span class="font-display font-bold block mb-4 opacity-50 uppercase text-sm">{{ category.title }}</span>
+            <div class="grid gap-x-20 gap-y-12 md:gap-y-20 lg:grid-cols-2 mb-20">
+                {% for item in craft.entries.relatedTo(category).all() %}
+                    <div class="font-display flex flex-col items-center relative">
+                        {% if item.photo|length %}
+                            {% include '/components/elements/image/image' with {
+                                image: item.photo[0],
+                                width: 490,
+                                height: 300,
+                                class: item.hoverPhoto|length ? 'lazyload hover:opacity-0 transition z-10' : 'lazyload'
+                            } %}
+                        {% endif %}
+                        {% if item.hoverPhoto|length %}
+                            {% include '/components/elements/image/image' with {
+                                image: item.hoverPhoto[0],
+                                width: 490,
+                                height: 300,
+                                class: 'lazyload absolute z-1'
+                            } %}
+                        {% endif %}
+                        <div class="whitespace-no-wrap border-2 z-20 border-two rounded-lg px-4 py-2 sm:px-6 sm:py-4 text-white -translate-y-6 md:-translate-y-1/2 bg-black text-center">
+                            <div class="md:text-xl md:min-w-[250px]">
+                                <span class="font-bold">{{ item.firstname }}</span> {{ item.lastname }}
+                            </div>
+                            <span class="text-xs">{{ item.position }}</span>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        {% else %}
+            <div class="grid gap-x-20 gap-y-12 md:gap-y-20 lg:grid-cols-2">
+                {% for item in items %}
+                    <div class="font-display flex flex-col items-center">
+                        {% include '/components/elements/image/image' with {
+                            image: item.photo[0],
+                            width: 490,
+                            height: 300,
+                            class: 'lazyload'
+                        } %}
+                        <div class="whitespace-no-wrap border-2 border-two rounded-lg px-4 py-2 sm:px-6 sm:py-4 -translate-y-6 md:-translate-y-1/2 bg-black text-center">
+                            <div class="md:text-xl md:min-w-[250px]">
+                                <span class="font-bold">{{ item.firstname }}</span> {{ item.lastname }}
+                            </div>
+                            <span class="text-xs">{{ item.position }}</span>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        {% endfor %}
+    </div>
+</section>

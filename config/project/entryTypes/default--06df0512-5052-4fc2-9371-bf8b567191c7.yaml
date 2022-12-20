@@ -2,6 +2,7 @@ fieldLayouts:
   241b4590-e4d4-48a9-bc06-f47de85526b5:
     tabs:
       -
+        elementCondition: null
         elements:
           -
             autocapitalize: true
@@ -9,6 +10,7 @@ fieldLayouts:
             autocorrect: true
             class: null
             disabled: false
+            elementCondition: null
             id: null
             instructions: null
             label: null
@@ -24,10 +26,25 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 60dd930a-8eda-4fd6-894c-a1e1f9dcffeb
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 09d2a6ba-3fed-4b21-9b93-9ae69ad011d0 # Seiten-Blöcke
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 35be3c01-84dd-42fb-9751-101c6e7d612e
+            userCondition: null
             warning: null
             width: 100
         name: Inhalt
-        sortOrder: 1
+        uid: e48e161f-fd89-47dd-a973-52941e55f166
+        userCondition: null
 handle: default
 hasTitleField: true
 name: Standardseite

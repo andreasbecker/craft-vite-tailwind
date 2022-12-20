@@ -1,0 +1,23 @@
+{% set items = items ?? block.listitems.all() ?? null %}
+{% set hasBackground = hasBackground ?? block.hasBackground ?? null %}
+{% set columnCount = columnCount ?? block.columnCount ?? null %}
+
+<section class="py-14 md:py-28 {{ hasBackground ? 'bg-two' }}">
+    <div class="container grid gap-10 {{ columnCount == '3' ? 'md:grid-cols-3' : 'md:grid-cols-2' }}">
+        {% for item in items %}
+            <div class="grid grid-cols-6 gap-3">
+                <div class="col-span-1">
+                    {% if item.icon|length %}
+                        <img data-src="{{ item.icon[0].url }}" alt="{{ item.headline }}" class="lazyload" />
+                    {% endif %}
+                </div>
+                <div class="col-span-5">
+                    <strong class="block font-display mb-4">{{ item.headline }}</strong>
+                    <div class="prose">
+                        {{ item.text }}
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</section>

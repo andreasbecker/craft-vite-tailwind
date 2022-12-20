@@ -1,0 +1,46 @@
+{% set topline = topline ?? block.topline ?? null %}
+{% set headline = headline ?? block.headline ?? null %}
+{% set teasertext = teasertext ?? block.teasertext ?? null %}
+{% set hasBackground = hasBackground ?? block.hasBackground ?? null %}
+{% set backgroundColor = backgroundColor ?? block.backgroundColor ?? null %}
+{% set button = button ?? block.button ?? null %}
+{% set photos = photos ?? block.photos ?? null %}
+
+<section class="py-14 md:py-28 {{ hasBackground != '0' ? hasBackground == 'top' ? 'bg-half-top' : 'bg-half-bottom pb-0' }} {{ backgroundColor }}">
+    <div class="container grid gap-12 sm:grid-cols-12">
+        <div class="sm:col-span-7 flex flex-col justify-between {{ backgroundColor == 'dark' and hasBackground == 'top' ? 'text-white' }}">
+            <div>
+                {% if topline %}
+                    <span class="topline">{{ topline }}</span>
+                {% endif %}
+                <h1 class="headline mb-4">
+                    {{ headline }}
+                </h1>
+                {% if teasertext %}
+                    <p class="teasertext mb-8">
+                        {{ teasertext }}
+                    </p>
+                {% endif %}
+                {% if button.url %}
+                    <a href="{{ button.url }}" class="btn mb-8">{{ button.text }}</a>
+                {% endif %}
+            </div>
+            {% include '/components/elements/image/image' with {
+                image: photos[0],
+                width: 690,
+                height: 470,
+                class: 'lazyload w-max'
+            } %}
+        </div>
+        <div class="sm:col-span-5 self-end text-center sm:text-left">
+            {% if (photos|length) > 1 %}
+                {% include '/components/elements/image/image' with {
+                    image: photos[1],
+                    width: 480,
+                    height: 760,
+                    class: 'lazyload w-max'
+                } %}
+            {% endif %}
+        </div>
+    </div>
+</section>

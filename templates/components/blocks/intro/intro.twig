@@ -1,0 +1,23 @@
+{% set topline = topline ?? block.topline ?? null %}
+{% set headline = headline ?? block.headline ?? null %}
+{% set teasertext = teasertext ?? block.teasertext ?? null %}
+{% set button = button ?? block.button ?? null %}
+
+<section class="container py-20 md:py-28 flex place-content-center text-center">
+    <div class="max-w-4xl">
+        {% if topline %}
+            <span class="topline">{{ topline }}</span>
+        {% endif %}
+        <h1 class="headline mb-4">
+            {{ headline }}
+        </h1>
+        {% if teasertext %}
+            <p class="teasertext mb-8">
+                {{ teasertext }}
+            </p>
+        {% endif %}
+        {% if button and button.url %}
+            <a href="{{ button.url }}" class="btn">{{ button.text }}</a>
+        {% endif %}
+    </div>
+</section>

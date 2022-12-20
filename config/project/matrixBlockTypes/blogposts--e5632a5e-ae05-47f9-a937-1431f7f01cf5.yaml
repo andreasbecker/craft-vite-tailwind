@@ -1,0 +1,119 @@
+field: 09d2a6ba-3fed-4b21-9b93-9ae69ad011d0 # Seiten-Blöcke
+fieldLayouts:
+  1356a2ff-a283-46e8-9a81-c813906f396a:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 8ccf6726-2590-482d-ad9f-eaf4e89f5821 # Mit Hintergrundfarbe anzeigen
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b84757b6-4c6f-4893-b84b-bbabfb9b2105
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: 04565b31-93e7-4a86-93ce-4eb6c5f89c93 # Anker
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: afe56f04-71f5-4051-8dd9-6646969d77a7
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: 0f0e81fa-bff9-4cad-b3e1-4a705f88344f # Artikel
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 8c3ac9ff-2e4d-4ebc-9321-36cb9b8ae1cf
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 9bb816b0-89f1-4b0b-b157-637f88931ad4
+        userCondition: null
+fields:
+  0f0e81fa-bff9-4cad-b3e1-4a705f88344f: # Artikel
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: posts
+    instructions: 'Wählen Sie hier die Blog-Artikel (max. 3), die angezeigt werden sollen. Wenn das Feld leer gelassen wird, werden die neusten drei Artikel angezeigt.'
+    name: Artikel
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      localizeRelations: false
+      maxRelations: 3
+      minRelations: null
+      selectionCondition:
+        __assoc__:
+          -
+            - elementType
+            - craft\elements\Entry
+          -
+            - fieldContext
+            - global
+          -
+            - class
+            - craft\elements\conditions\entries\EntryCondition
+      selectionLabel: 'Artikel hinzufügen'
+      showSiteMenu: true
+      source: null
+      sources: '*'
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: null
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Entries
+  8ccf6726-2590-482d-ad9f-eaf4e89f5821: # Mit Hintergrundfarbe anzeigen
+    columnSuffix: vclvnlye
+    contentColumnType: boolean
+    fieldGroup: null
+    handle: hasBackground
+    instructions: null
+    name: 'Mit Hintergrundfarbe anzeigen'
+    searchable: false
+    settings:
+      default: false
+      offLabel: null
+      onLabel: null
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Lightswitch
+  04565b31-93e7-4a86-93ce-4eb6c5f89c93: # Anker
+    columnSuffix: jmpihwdf
+    contentColumnType: text
+    fieldGroup: null
+    handle: anchor
+    instructions: 'Hier können Sie eine Anker-ID angeben, z. B. `schulungen`. Sie können dann in einem anderen Block auf diesen Anker verweisen, z. B. https://becker-gruppe.com/lernen#schulungen'
+    name: Anker
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: blogposts
+name: Blog-Artikel
+sortOrder: 12

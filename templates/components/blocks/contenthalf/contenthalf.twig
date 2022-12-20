@@ -1,0 +1,47 @@
+{% set topline = topline ?? block.topline ?? null %}
+{% set headline = headline ?? block.headline ?? null %}
+{% set headlineSize = headlineSize ?? block.headlineSize ?? '' %}
+{% set text = text ?? block.text ?? null %}
+{% set button = button ?? block.button ?? null %}
+{% set anchor = anchor ?? block.anchor ?? null %}
+{% set contents = contents ?? block.contents.all() ?? null %}
+{% set hasBackground = hasBackground ?? block.hasBackground ?? null %}
+{% set paddingTop = paddingTop ?? block.padding.top ?? 'normal' %}
+{% set paddingBottom = paddingBottom ?? block.padding.bottom ?? 'normal' %}
+
+<section class="{{ paddingTop == 'normal' ? 'pt-14 md:pt-28' }} {{ paddingBottom == 'normal' ? 'pb-14 md:pb-28' }} {{ hasBackground ? 'bg-two' }}" {% if anchor %} id="{{ anchor }}" {% endif %}>
+    <div class="container flex gap-20 flex-col md:flex-row items-center">
+        <div class="md:w-1/2">
+            {% if topline %}
+                <span class="topline dark">{{ topline }}</span>
+            {% endif %}
+            <h2 class="headline {{ headlineSize }} mb-4">
+                {{ headline }}
+            </h2>
+            {% if text %}
+                <div class="mb-8 text-lg leading-8 prose">
+                    {{ text }}
+                </div>
+            {% endif %}
+            {% if button.url %}
+                <a href="{{ button.url }}" class="btn">{{ button.text }}</a>
+            {% endif %}
+        </div>
+        <div class="md:w-1/2 prose">
+            {% for content in contents %}
+                {% if content.media %}
+                    {% for image in content.media.all() %}
+                        {% include '/components/elements/image/image' with {
+                            'image': image,
+                            'width': 600,
+                            'class': 'lazyload'
+                        } %}
+                    {% endfor %}
+                {% endif %}
+                {% if content.text %}
+                    {{ content.text }}
+                {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</section>

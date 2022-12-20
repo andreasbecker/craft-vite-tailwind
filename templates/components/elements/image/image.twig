@@ -1,0 +1,38 @@
+{#
+
+Image
+Global image element.
+
+Usage:
+{% include '/components/elements/image' with {
+    'image': image,
+    'width': 300,
+    'height': 200,
+    'class': 'lazyload',
+    'format': 'jpg',
+    'position': 'center-center'
+} %}
+
+#}
+
+{% set image = image ?? null %}
+{% set class = class ?? null %}
+{% set urlOnly = urlOnly ?? false %}
+
+{% if image|length %}
+
+    {% set thumb = {
+        mode: 'crop',
+        width: width ?? null,
+        height: height ?? null,
+        quality: 90,
+        format: format ?? null,
+        position: position ?? 'center-center'
+    } %}
+
+    {% if not urlOnly %}
+        <img src="{{ blurhash(image) }}" data-src="{{ image.getUrl(thumb) }}" width="{{ image.getWidth(thumb) }}" height="{{ image.getHeight(thumb) }}" class="{{ class }}" alt="{{ image.alt ??? image.title }}" />
+    {% else %}
+        {{ image.getUrl(thumb) }}
+    {% endif %}
+{% endif %}

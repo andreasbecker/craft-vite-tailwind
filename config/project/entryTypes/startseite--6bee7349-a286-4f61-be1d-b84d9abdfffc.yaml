@@ -2,6 +2,7 @@ fieldLayouts:
   06bc0e17-030a-400e-b750-e9c3240bfc1d:
     tabs:
       -
+        elementCondition: null
         elements:
           -
             autocapitalize: true
@@ -9,6 +10,7 @@ fieldLayouts:
             autocorrect: true
             class: null
             disabled: false
+            elementCondition: null
             id: null
             instructions: null
             label: null
@@ -24,23 +26,25 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 4368fe8a-e358-440f-9195-6ac581b8151a
+            userCondition: null
             warning: null
             width: 100
-        name: Inhalt
-        sortOrder: 1
-      -
-        elements:
           -
-            fieldUid: 9989e239-1788-4ea2-9611-ff34ff765bc1
+            elementCondition: null
+            fieldUid: 09d2a6ba-3fed-4b21-9b93-9ae69ad011d0 # Seiten-Blöcke
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: fbe5a289-3189-47ff-81e2-84f22ff86332
+            userCondition: null
             warning: null
             width: 100
-        name: SEO
-        sortOrder: 2
+        name: Inhalt
+        uid: ef45c019-20e9-4e2c-ad5f-0855be849f4a
+        userCondition: null
 handle: startseite
 hasTitleField: true
 name: Startseite

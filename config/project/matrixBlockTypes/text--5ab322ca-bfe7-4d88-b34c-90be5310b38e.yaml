@@ -1,0 +1,131 @@
+field: 09d2a6ba-3fed-4b21-9b93-9ae69ad011d0 # Seiten-Blöcke
+fieldLayouts:
+  869f42dd-2672-4332-b054-97a178d83e81:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 6a48736a-df61-4ea1-b79b-86bd5068e693 # Formatierter Text
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 8b1f6332-f2b8-41be-8815-84ba9018244d
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 5c3d75cf-7d62-4546-8f84-d20dfb014717 # Mit Hintergrundfarbe anzeigen
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e10c3c43-662a-4db2-8b90-8d43e5dcbf6c
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 6138880b-2c08-4a4b-a4f6-dcf40281156f # Abstand
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: dd614e42-8e80-4a55-8655-d0e9f8ba7b79
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: c2e23e3b-d31d-4267-8816-aa011d7bb91c
+        userCondition: null
+fields:
+  5c3d75cf-7d62-4546-8f84-d20dfb014717: # Mit Hintergrundfarbe anzeigen
+    columnSuffix: kpofyxje
+    contentColumnType: boolean
+    fieldGroup: null
+    handle: hasBackground
+    instructions: null
+    name: 'Mit Hintergrundfarbe anzeigen'
+    searchable: false
+    settings:
+      default: false
+      offLabel: null
+      onLabel: null
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Lightswitch
+  6a48736a-df61-4ea1-b79b-86bd5068e693: # Formatierter Text
+    columnSuffix: ofdhkrof
+    contentColumnType: text
+    fieldGroup: null
+    handle: richtext
+    instructions: null
+    name: 'Formatierter Text'
+    searchable: false
+    settings:
+      availableTransforms: ''
+      availableVolumes: '*'
+      columnType: text
+      configSelectionMode: choose
+      defaultTransform: ''
+      manualConfig: ''
+      purifierConfig: null
+      purifyHtml: true
+      redactorConfig: Simple.json
+      removeEmptyTags: true
+      removeInlineStyles: true
+      removeNbsp: true
+      showHtmlButtonForNonAdmins: false
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      uiMode: enlarged
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
+  6138880b-2c08-4a4b-a4f6-dcf40281156f: # Abstand
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: padding
+    instructions: 'Hier kann der Abstand dieses Blocks bestimmt werden, falls die Inhalte näher oder ferner zum Vorgänger- oder Nachfolger-Block dargestellt werden sollen.'
+    name: Abstand
+    searchable: false
+    settings:
+      blockTypeFields: 0
+      changedFieldIndicator: 346929733
+      columns:
+        __assoc__:
+          -
+            - 11d3e008-fc98-48a6-bcb6-718fe4cf4ecc # Oben
+            -
+              __assoc__:
+                -
+                  - width
+                  - ''
+          -
+            - 35f37452-c85b-462a-9dec-7c96b14202a4 # Unten
+            -
+              __assoc__:
+                -
+                  - width
+                  - ''
+      contentTable: '{{%stc_4_padding}}'
+      fieldLayout: table
+      maxRows: null
+      minRows: null
+      propagationKeyFormat: null
+      propagationMethod: all
+      selectionLabel: null
+      staticField: true
+    translationKeyFormat: null
+    translationMethod: none
+    type: verbb\supertable\fields\SuperTableField
+handle: text
+name: Text
+sortOrder: 4

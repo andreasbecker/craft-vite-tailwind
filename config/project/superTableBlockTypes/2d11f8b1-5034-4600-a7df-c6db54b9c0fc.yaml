@@ -1,0 +1,106 @@
+changedFieldIndicator: 1397830899
+field: 4d47a3ed-a2e3-488b-b44d-25bcb73e3fa5 # Abstand
+fieldLayouts:
+  ba301c3e-b47e-4b84-8177-299ca2621ccd:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: c8037b30-8030-488f-a7db-a5cab78ce7f5 # Oben
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e59788a5-ea3a-4778-8014-99b08dea9749
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 84a1b406-dee1-4c25-b237-2d1d74e902e2 # Unten
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 4cf0ec0f-f77a-4746-8f50-e9eba95851f8
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: dd9030c1-4c3e-4b56-98ce-3ec8e89d4d82
+        userCondition: null
+fields:
+  84a1b406-dee1-4c25-b237-2d1d74e902e2: # Unten
+    columnSuffix: odkwjsjs
+    contentColumnType: string
+    fieldGroup: null
+    handle: bottom
+    instructions: null
+    name: Unten
+    searchable: false
+    settings:
+      options:
+        -
+          __assoc__:
+            -
+              - label
+              - Normal
+            -
+              - value
+              - normal
+            -
+              - default
+              - '1'
+        -
+          __assoc__:
+            -
+              - label
+              - 'Kein Abstand'
+            -
+              - value
+              - '0'
+            -
+              - default
+              - ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Dropdown
+  c8037b30-8030-488f-a7db-a5cab78ce7f5: # Oben
+    columnSuffix: zyiirrtu
+    contentColumnType: string
+    fieldGroup: null
+    handle: top
+    instructions: null
+    name: Oben
+    searchable: false
+    settings:
+      options:
+        -
+          __assoc__:
+            -
+              - label
+              - Normal
+            -
+              - value
+              - normal
+            -
+              - default
+              - '1'
+        -
+          __assoc__:
+            -
+              - label
+              - 'Kein Abstand'
+            -
+              - value
+              - '0'
+            -
+              - default
+              - ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Dropdown

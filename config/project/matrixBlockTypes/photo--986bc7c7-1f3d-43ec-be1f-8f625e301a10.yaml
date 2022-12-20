@@ -1,0 +1,246 @@
+field: 09d2a6ba-3fed-4b21-9b93-9ae69ad011d0 # Seiten-Blöcke
+fieldLayouts:
+  0de06eb9-1afb-47f5-a655-0339ccaecb03:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 023f4a41-4913-4d50-a191-88a483132495 # Mit Hintergrundfarbe anzeigen
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 5a204a0f-26ef-4d56-944f-a1ca4ff36daa
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: 9369270f-0e8d-4747-8e2b-1522feb5e397 # Anker
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 73e45be9-2415-4218-bb50-18d22860ca58
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: ed099c49-73bf-46d8-9cb8-73c4f9f83037 # Foto
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: adecbb34-b748-4bee-b8b0-0c30979f5a94
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: d95722b7-f029-4c37-baa4-a7ebf25ae6b8 # Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b7d65af1-ebbd-4bf0-9ab2-49a2f98b382c
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 3a08e7f3-3b58-4101-810f-989947621b30 # Zitat
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 36fe13ab-6c34-4c9b-bc20-1de9fbfbbfb1
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: aceff15d-0e1d-4445-9bcf-cac7bf4b31b2
+        userCondition: null
+fields:
+  3a08e7f3-3b58-4101-810f-989947621b30: # Zitat
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: quote
+    instructions: null
+    name: Zitat
+    searchable: false
+    settings:
+      blockTypeFields: 0
+      changedFieldIndicator: 904677139
+      columns:
+        __assoc__:
+          -
+            - 3e2cbbce-ba58-45f8-a8e1-3e2db38eeca7 # Zitattext
+            -
+              __assoc__:
+                -
+                  - width
+                  - ''
+          -
+            - 0321669e-ecbd-4ced-9108-a896a6ec7b91 # Autor
+            -
+              __assoc__:
+                -
+                  - width
+                  - ''
+      contentTable: '{{%stc_5_quote}}'
+      fieldLayout: row
+      maxRows: 1
+      minRows: null
+      propagationKeyFormat: null
+      propagationMethod: all
+      selectionLabel: 'Zitat hinzufügen'
+      staticField: null
+    translationKeyFormat: null
+    translationMethod: none
+    type: verbb\supertable\fields\SuperTableField
+  023f4a41-4913-4d50-a191-88a483132495: # Mit Hintergrundfarbe anzeigen
+    columnSuffix: nmuuyvnm
+    contentColumnType: string
+    fieldGroup: null
+    handle: hasBackground
+    instructions: 'Der Hintergrund verläuft bis zur Hälfte der Höhe des Blocks. Sie können wählen, ob die obere oder die untere Hälfte farbig hinterlegt wird.'
+    name: 'Mit Hintergrundfarbe anzeigen'
+    searchable: false
+    settings:
+      options:
+        -
+          __assoc__:
+            -
+              - label
+              - Nein
+            -
+              - value
+              - '0'
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - 'Obere Hälfte'
+            -
+              - value
+              - top
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - 'Untere Hälfte'
+            -
+              - value
+              - bottom
+            -
+              - default
+              - ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Dropdown
+  9369270f-0e8d-4747-8e2b-1522feb5e397: # Anker
+    columnSuffix: ercrhltp
+    contentColumnType: text
+    fieldGroup: null
+    handle: anchor
+    instructions: 'Hier können Sie eine Anker-ID angeben, z. B. `schulungen`. Sie können dann in einem anderen Block auf diesen Anker verweisen, z. B. https://becker-gruppe.com/lernen#schulungen'
+    name: Anker
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  d95722b7-f029-4c37-baa4-a7ebf25ae6b8: # Text
+    columnSuffix: ebjyxnao
+    contentColumnType: text
+    fieldGroup: null
+    handle: text
+    instructions: 'Dieser Text erscheint zentriert unter dem Foto'
+    name: Text
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  ed099c49-73bf-46d8-9cb8-73c4f9f83037: # Foto
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: photo
+    instructions: null
+    name: Foto
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      allowSubfolders: false
+      allowUploads: true
+      allowedKinds:
+        - image
+      defaultUploadLocationSource: 'volume:60ea60f4-d351-4a83-87fb-2db87df0844a' # Medien
+      defaultUploadLocationSubpath: null
+      localizeRelations: false
+      maxRelations: 1
+      minRelations: null
+      previewMode: full
+      restrictFiles: true
+      restrictLocation: true
+      restrictedDefaultUploadSubpath: null
+      restrictedLocationSource: 'volume:60ea60f4-d351-4a83-87fb-2db87df0844a' # Medien
+      restrictedLocationSubpath: null
+      selectionCondition:
+        __assoc__:
+          -
+            - elementType
+            - craft\elements\Asset
+          -
+            - fieldContext
+            - global
+          -
+            - class
+            - craft\elements\conditions\assets\AssetCondition
+      selectionLabel: 'Foto hinzufügen'
+      showSiteMenu: true
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      source: null
+      sources: '*'
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: large
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+handle: photo
+name: Foto
+sortOrder: 5

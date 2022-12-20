@@ -1,0 +1,35 @@
+{% set items = items ?? block.posts.all() ?? null %}
+
+{% if not items %}
+    {% set items = craft.entries.section('blog').limit(3).all() %}
+{% endif %}
+
+{% set hasBackground = hasBackground ?? block.hasBackground ?? null %}
+
+<section class="py-14 md:py-28 {{ hasBackground ? 'bg-two' }}">
+    <div class="container">
+        <p class="topline dark">
+            {{ 'Die neusten Artikel unserer Experten'|t }}
+        </p>
+        <div class="grid gap-10 md:grid-cols-3 grid-cols-1 divide-y md:divide-y-0">
+            {% for item in items %}
+                <div class="flex">
+                    <a href="{{ item.url }}" class="grid grid-cols-6 gap-3 border-2 hover:bg-white border-transparent rounded-lg md:hover:border-one md:hover:shadow-xl transition px-10 py-6">
+                        <div class="col-span-2">
+                            {% include '/components/elements/image/image' with {
+                                image: item.blogauthor[0].photo[0],
+                                width: 56,
+                                height: 56,
+                                class: 'lazyload rounded-full'
+                            } %}
+                        </div>
+                        <div class="col-span-4">
+                            <span class="block font-display mb-4 pt-6">{{ item.title }}</span>
+                            <span class="text-xs font-bold opacity-50">von {{ item.blogauthor[0].firstname }}</span>
+                        </div>
+                    </a>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>

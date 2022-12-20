@@ -1,0 +1,28 @@
+{% set listElement = listElement ?? null %}
+{% set listIcon = listIcon ?? listElement.icon[0] ?? null %}
+{% set listHeadline = listHeadline ?? listElement.headline ?? null %}
+{% set list = list ?? listElement.list.all() ?? null %}
+
+<div class="flex gap-4 mt-12">
+    {% if listIcon %}
+        <div class="flex-shrink-0">
+            {% include '/components/elements/image/image' with {
+                image: listIcon,
+                width: 35,
+                class: 'lazyload w-full'
+            } %}
+        </div>
+    {% endif %}
+    <div>
+        {% if listHeadline %}
+            <span class="font-bold font-display block mb-4 pt-4">{{ listHeadline }}</span>
+        {% endif %}
+        {% if list %}
+            <ul class="divide-y divide-[#676767] opacity-50">
+                {% for listItem in list %}
+                    <li class="block py-4">{{ listItem.text }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+    </div>
+</div>

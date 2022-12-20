@@ -1,0 +1,149 @@
+field: 13e93ed9-0989-4a8e-b868-a9ce781a7eb0 # Listenelement
+fieldLayouts:
+  99c728c8-dcda-45a1-9ec5-4cd80d859a1f:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 03bc540f-86b6-4751-a897-eab67687c809 # Überschrift
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c5d82f4d-847a-42d3-bb5b-fe3499d07c30
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 19b69875-981a-4cba-aed9-c791d36290a6 # Icon
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 0c4c4b43-da4d-4dbc-abe1-4c4dd6174c2d
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 782eb7f1-b326-47fa-8807-62da5dcb6689 # Aufzählung
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9330e7f2-9052-4a51-8665-0d6cca0cfbf3
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 06a2f3c0-0063-484f-948b-90c154ee6049
+        userCondition: null
+fields:
+  03bc540f-86b6-4751-a897-eab67687c809: # Überschrift
+    columnSuffix: ggktzjza
+    contentColumnType: text
+    fieldGroup: null
+    handle: headline
+    instructions: null
+    name: Überschrift
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  19b69875-981a-4cba-aed9-c791d36290a6: # Icon
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: icon
+    instructions: null
+    name: Icon
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      allowSubfolders: false
+      allowUploads: true
+      allowedKinds:
+        - image
+      defaultUploadLocationSource: 'volume:60ea60f4-d351-4a83-87fb-2db87df0844a' # Medien
+      defaultUploadLocationSubpath: null
+      localizeRelations: false
+      maxRelations: 1
+      minRelations: null
+      previewMode: full
+      restrictFiles: true
+      restrictLocation: true
+      restrictedDefaultUploadSubpath: null
+      restrictedLocationSource: 'volume:60ea60f4-d351-4a83-87fb-2db87df0844a' # Medien
+      restrictedLocationSubpath: null
+      selectionCondition:
+        __assoc__:
+          -
+            - elementType
+            - craft\elements\Asset
+          -
+            - fieldContext
+            - global
+          -
+            - class
+            - craft\elements\conditions\assets\AssetCondition
+      selectionLabel: 'Icon hinzufügen'
+      showSiteMenu: true
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      source: null
+      sources: '*'
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  782eb7f1-b326-47fa-8807-62da5dcb6689: # Aufzählung
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: list
+    instructions: null
+    name: Aufzählung
+    searchable: false
+    settings:
+      blockTypeFields: 0
+      changedFieldIndicator: 1768965434
+      columns:
+        __assoc__:
+          -
+            - 8adbdd3a-9db9-47bb-b8a1-c4b2cd15d3a6 # Text
+            -
+              __assoc__:
+                -
+                  - width
+                  - ''
+      contentTable: '{{%stc_11_list}}'
+      fieldLayout: row
+      maxRows: null
+      minRows: null
+      propagationKeyFormat: null
+      propagationMethod: all
+      selectionLabel: 'Aufzählungspunkt hinzufügen'
+      staticField: null
+    translationKeyFormat: null
+    translationMethod: none
+    type: verbb\supertable\fields\SuperTableField
+handle: list
+name: Liste
+sortOrder: 1

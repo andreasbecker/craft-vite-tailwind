@@ -1,0 +1,112 @@
+changedFieldIndicator: 1818155579
+field: 85cfa7a8-8f79-4ac3-808a-300a09314853 # Grafik oder Text
+fieldLayouts:
+  80d545a9-dba6-4e09-8d3d-5bfd01b5dc9d:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 180467f8-c501-45a4-b392-b569c2f5a280 # Grafik(en)
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 72e036da-a197-41ae-948c-6df292cbe9eb
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: de7addaf-cbc6-46f8-a82c-3d0fdeb3fbcc # Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b541f227-c385-4808-bc1c-0b46ff726332
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 39b8a8be-b0e1-4736-b0e2-27773cede8ae
+        userCondition: null
+fields:
+  180467f8-c501-45a4-b392-b569c2f5a280: # Grafik(en)
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: media
+    instructions: null
+    name: Grafik(en)
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      allowSubfolders: false
+      allowUploads: true
+      allowedKinds:
+        - image
+      defaultUploadLocationSource: 'volume:60ea60f4-d351-4a83-87fb-2db87df0844a' # Medien
+      defaultUploadLocationSubpath: null
+      localizeRelations: false
+      maxRelations: 1
+      minRelations: null
+      previewMode: full
+      restrictFiles: true
+      restrictLocation: true
+      restrictedDefaultUploadSubpath: null
+      restrictedLocationSource: 'volume:60ea60f4-d351-4a83-87fb-2db87df0844a' # Medien
+      restrictedLocationSubpath: null
+      selectionCondition:
+        __assoc__:
+          -
+            - elementType
+            - craft\elements\Asset
+          -
+            - fieldContext
+            - global
+          -
+            - class
+            - craft\elements\conditions\assets\AssetCondition
+      selectionLabel: 'Grafik hinzufügen'
+      showSiteMenu: true
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      source: null
+      sources: '*'
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  de7addaf-cbc6-46f8-a82c-3d0fdeb3fbcc: # Text
+    columnSuffix: fwidjeuy
+    contentColumnType: text
+    fieldGroup: null
+    handle: text
+    instructions: null
+    name: Text
+    searchable: false
+    settings:
+      availableTransforms: ''
+      availableVolumes: '*'
+      columnType: text
+      configSelectionMode: choose
+      defaultTransform: ''
+      manualConfig: ''
+      purifierConfig: null
+      purifyHtml: true
+      redactorConfig: Simple.json
+      removeEmptyTags: true
+      removeInlineStyles: true
+      removeNbsp: true
+      showHtmlButtonForNonAdmins: false
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      uiMode: enlarged
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field

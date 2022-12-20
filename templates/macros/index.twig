@@ -1,0 +1,35 @@
+{#
+
+Macro to render a list of block content items.
+
+Usage:
+{% import 'macros' as macros %}
+{{ macros.renderPageBlocks({
+    'blocks': entry.pageBlocks.all(),
+    'entry': entry|default,
+}) }}
+
+#}
+{% macro renderPageBlocks(options) %}
+    {# Parameters #}
+    {% set blocks = options.blocks ?? [] %}
+    {% set entry = options.entry ?? null %}
+
+    {% if blocks|length %}
+        {% for block in blocks %}
+            {% block content %}
+                {# Variables #}
+                {% set blockTypeHandle = block.type.handle|lower %}
+                {% set data = {
+                    page: entry,
+                    block: block
+                } %}
+
+                {# Render #}
+                <div id="block-{{ blockTypeHandle }}-{{ block.id }}">
+                    {% include ['/components/blocks/' ~ blockTypeHandle ~ '/' ~ blockTypeHandle ~ '.twig', '/components/blocks/' ~ blockTypeHandle, '/components/blocks/unknown'] with data %}
+                </div>
+            {% endblock %}
+        {% endfor %}
+    {% endif %}
+{% endmacro %}

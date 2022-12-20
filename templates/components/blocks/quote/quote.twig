@@ -1,0 +1,16 @@
+{% set quote = quote ?? block.quote[0] ?? null %}
+
+<section class="">
+    <div class="py-14">
+        <div class="container relative">
+            {% if quote %}
+                <div class="p-8 md:p-14 max-w-4xl">
+                    {% include '/components/elements/quote/quote' with {
+                        quote: quote,
+                        theme: 'light'
+                    } %}
+                </div>
+            {% endif %}
+        </div>
+    </div>
+</section>

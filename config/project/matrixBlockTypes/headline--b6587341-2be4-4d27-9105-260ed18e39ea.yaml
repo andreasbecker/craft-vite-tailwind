@@ -1,0 +1,152 @@
+field: 09d2a6ba-3fed-4b21-9b93-9ae69ad011d0 # Seiten-Blöcke
+fieldLayouts:
+  c12b14a0-0dd1-41b9-b6a6-375a13a32316:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 0ca6e880-4b93-4645-acc1-5bf2e4b41b82 # Stichzeile
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: eb30c2c8-3bbe-4da8-8916-09ecfabb61ff
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: e589d3c2-7dba-4135-b43f-d5d02656d344 # Überschrift
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c8763479-80ef-42c9-957d-5d6bf35f2d06
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: d6dbb810-148e-43a4-aeec-a9c5e66a17be # Überschrift-Größe
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c1263e29-8100-4bcd-b6ea-bdb58c84fe66
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 11a958dd-0788-42da-bc34-eef3793a7ff6 # Mit Hintergrundfarbe anzeigen
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ca2ce9d0-0902-4f6d-81d8-086285456045
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: a6bbf2aa-a9c3-4d01-87ea-9a2b0010aad6
+        userCondition: null
+fields:
+  0ca6e880-4b93-4645-acc1-5bf2e4b41b82: # Stichzeile
+    columnSuffix: zealbjvr
+    contentColumnType: text
+    fieldGroup: null
+    handle: topline
+    instructions: null
+    name: Stichzeile
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  11a958dd-0788-42da-bc34-eef3793a7ff6: # Mit Hintergrundfarbe anzeigen
+    columnSuffix: mysgjqre
+    contentColumnType: boolean
+    fieldGroup: null
+    handle: hasBackground
+    instructions: null
+    name: 'Mit Hintergrundfarbe anzeigen'
+    searchable: false
+    settings:
+      default: false
+      offLabel: null
+      onLabel: null
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Lightswitch
+  d6dbb810-148e-43a4-aeec-a9c5e66a17be: # Überschrift-Größe
+    columnSuffix: rcfyuadp
+    contentColumnType: string
+    fieldGroup: null
+    handle: headlineSize
+    instructions: null
+    name: Überschrift-Größe
+    searchable: false
+    settings:
+      options:
+        -
+          __assoc__:
+            -
+              - label
+              - Klein
+            -
+              - value
+              - small
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Groß
+            -
+              - value
+              - large
+            -
+              - default
+              - ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Dropdown
+  e589d3c2-7dba-4135-b43f-d5d02656d344: # Überschrift
+    columnSuffix: mdgxdbpn
+    contentColumnType: text
+    fieldGroup: null
+    handle: headline
+    instructions: null
+    name: Überschrift
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: headline
+name: Überschrift
+sortOrder: 3

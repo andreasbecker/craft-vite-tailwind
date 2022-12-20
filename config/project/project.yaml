@@ -1,4 +1,4 @@
-dateModified: 1670409614
+dateModified: 1671533561
 email:
   fromEmail: andreas@frischkraft.de
   fromName: Boilerplate
@@ -13,18 +13,177 @@ fs:
     url: '@uploadsUrl'
 meta:
   __names__:
+    0b6a3d27-cf25-4c7b-9c1a-b36fdae1b496: Überschrift # Überschrift
+    0ca6e880-4b93-4645-acc1-5bf2e4b41b82: Stichzeile # Stichzeile
+    0e7e765f-1fdb-47b8-9539-218ab9fb080f: Anker # Anker
+    0e57a49f-c929-4a37-89d2-da868ffdcb94: Text # Text
+    0f0e81fa-bff9-4cad-b3e1-4a705f88344f: Artikel # Artikel
     1a4fd767-cdbd-435f-9d5c-3cfccfd95087: Überschrift # Überschrift
+    1ae56178-8974-470c-aa80-00472b4afba6: 'Mit Hintergrundfarbe anzeigen' # Mit Hintergrundfarbe anzeigen
     2b4b7f4a-8cba-4063-8112-ab4c475dfbb8: Topline # Topline
+    2d140783-8507-4220-92e9-e67ac3c700ba: Anker # Anker
+    2f37751b-934d-44ae-8877-5585b3f82cc3: Button # Button
+    3a08e7f3-3b58-4101-810f-989947621b30: Zitat # Zitat
+    3a83a1da-8d5e-4c6d-8cbd-b1a68cdc92c5: Teammitglied(er) # Teammitglied(er)
+    03bc540f-86b6-4751-a897-eab67687c809: Überschrift # Überschrift
+    3e2cbbce-ba58-45f8-a8e1-3e2db38eeca7: Zitattext # Zitattext
+    3e99c511-bdb4-403a-916e-ceed154f81e8: 'Medien | Liste' # Medien | Liste
+    3ef6cc21-9bd2-4149-9a1f-9abaaa6bcdc3: Zitat # Zitat
+    4d47a3ed-a2e3-488b-b44d-25bcb73e3fa5: Abstand # Abstand
+    4ddc5c9a-3ca5-4302-8e23-1d2f86d1ffb7: Links # Links
+    5a503633-46e9-4387-bf97-dfdf0b1c429d: Text # Text
+    5ab322ca-bfe7-4d88-b34c-90be5310b38e: Text # Text
+    5be4e053-248e-458a-9d62-e43b55b30de0: Text # Text
+    5bf7d99b-6cb1-4dcc-be01-2e4118a9b01f: Überschrift # Überschrift
+    5c3d75cf-7d62-4546-8f84-d20dfb014717: 'Mit Hintergrundfarbe anzeigen' # Mit Hintergrundfarbe anzeigen
+    5c85e888-d84e-40ed-b38a-795747ea8dc1: Stichzeile # Stichzeile
+    5f1f454d-8483-4398-9a65-5c2234e7c230: Logos # Logos
+    6a9df321-8362-4164-9850-2279fef60bfc: CTA-Banner # CTA-Banner
+    6a48736a-df61-4ea1-b79b-86bd5068e693: 'Formatierter Text' # Formatierter Text
     6bee7349-a286-4f61-be1d-b84d9abdfffc: Startseite # Startseite
     6ddfbcee-cb13-4044-85d4-2e3f68a773bf: 'Craft Boilerplate' # Craft Boilerplate
     06df0512-5052-4fc2-9371-bf8b567191c7: Standardseite # Standardseite
+    7ba8a046-bbe1-40ca-bd81-0193ffc9d49d: Anker # Anker
+    07d53270-3e59-459c-ac47-05be5f5c9362: Fotos # Fotos
+    8adbdd3a-9db9-47bb-b8a1-c4b2cd15d3a6: Text # Text
+    8ccf6726-2590-482d-ad9f-eaf4e89f5821: 'Mit Hintergrundfarbe anzeigen' # Mit Hintergrundfarbe anzeigen
+    8e77fee8-35f4-41e3-aad7-a6873d5c982f: Stellenangebote # Stellenangebote
+    09d2a6ba-3fed-4b21-9b93-9ae69ad011d0: Seiten-Blöcke # Seiten-Blöcke
+    10b53b2f-f84e-4ef8-afaa-5c3bb959e20d: Foto-Intro # Foto-Intro
+    11a958dd-0788-42da-bc34-eef3793a7ff6: 'Mit Hintergrundfarbe anzeigen' # Mit Hintergrundfarbe anzeigen
+    11d3e008-fc98-48a6-bcb6-718fe4cf4ecc: Oben # Oben
+    13e93ed9-0989-4a8e-b868-a9ce781a7eb0: Listenelement # Listenelement
+    14e19d0e-761a-4992-becf-e813cfbaad48: Job(s) # Job(s)
+    19b69875-981a-4cba-aed9-c791d36290a6: Icon # Icon
+    20dfeeb7-484b-4538-9f0c-00fa26a8672c: Anlesetext # Anlesetext
+    023f4a41-4913-4d50-a191-88a483132495: 'Mit Hintergrundfarbe anzeigen' # Mit Hintergrundfarbe anzeigen
+    30afc5cc-e58d-4aae-b3e4-6afc885ab460: Anker # Anker
+    30c358ff-d041-4f46-9dd8-a2837a0016da: Grafik # Grafik
+    30f38a75-75e6-4097-8cf7-42f8ae0e055b: Liste # Liste
+    35f37452-c85b-462a-9dec-7c96b14202a4: Unten # Unten
+    38c815dc-a563-4269-b33b-ba7db1c576c9: 'Mit Hintergrundfarbe anzeigen' # Mit Hintergrundfarbe anzeigen
+    41b6fcb3-7903-4934-bfd1-821b407bdb63: Textblock # Textblock
+    44c2e107-819a-403b-a4bd-90754eb9874e: Stichzeile # Stichzeile
+    59a62675-c3e8-4464-810d-c008a8d814f0: Link-Gitter # Link-Gitter
+    60e2c80d-7fa5-48d7-9c9a-a1e1267f3ff5: 'Mit Hintergrund anzeigen' # Mit Hintergrund anzeigen
     60ea60f4-d351-4a83-87fb-2db87df0844a: Medien # Medien
+    61e5405d-b7dc-4286-b778-83f2611929eb: Zitat # Zitat
+    70b7e321-79dc-45c9-aafa-e514b4d90721: Listenpunkt # Listenpunkt
+    73dbc311-b016-4856-8346-265002100673: Newsletter # Newsletter
+    76fce62b-027b-4d00-b936-bdb175301fb0: Schulungen # Schulungen
+    84a1b406-dee1-4c25-b237-2d1d74e902e2: Unten # Unten
+    85cfa7a8-8f79-4ac3-808a-300a09314853: 'Grafik oder Text' # Grafik oder Text
+    94a0f51b-ff7b-47f3-b76c-e3463fe96ae3: Überschrift # Überschrift
+    97ace654-b6cb-4127-836e-4b22fc09eea4: Listenelemente # Listenelemente
+    101e348b-99f5-47dd-9c68-fddc59cf61c0: 'Liste aus Listen' # Liste aus Listen
+    272f94de-e93a-4b42-b15b-dc80980aeab2: Listen-Icon # Listen-Icon
+    299ef98d-6a0f-4c54-be63-d62d99987b34: Überschrift-Größe # Überschrift-Größe
+    0349d1e7-5b89-4b96-821c-93469b179029: Topline # Topline
+    401c0339-5a6c-492a-a9f3-70d1d3d80e57: YouTube-Video # YouTube-Video
+    442dff90-1d33-45d6-9152-ddc6303e40e5: Stichzeile # Stichzeile
+    535f856a-d39d-41d3-a444-1acb7c51689a: Listenelemente # Listenelemente
+    539a8bb8-ac8a-4386-874f-379c2bfdd27f: Formular # Formular
+    560aea0d-b96a-41f7-91da-3cd5d46bd966: Anker # Anker
+    653f5610-c4f2-4cec-b6ef-b30672e2de11: Überschrift # Überschrift
+    685eced2-b8cc-4018-a985-feef5eb0a117: 'Einfache Liste' # Einfache Liste
+    782eb7f1-b326-47fa-8807-62da5dcb6689: Aufzählung # Aufzählung
+    848dbd3c-cccc-4a06-b694-784a31dd3782: Spaltenzahl # Spaltenzahl
+    986bc7c7-1f3d-43ec-be1f-8f625e301a10: Foto # Foto
+    1717e6e3-574a-44ad-a9fe-49a509454425: Überschrift # Überschrift
+    3551f7ba-4618-408d-8559-aa3526923e09: 'Mit Hintergrundfarbe anzeigen' # Mit Hintergrundfarbe anzeigen
+    04565b31-93e7-4a86-93ce-4eb6c5f89c93: Anker # Anker
+    5614bd2c-f68c-4445-9675-6bd963bbc831: Überschrift # Überschrift
+    5952c7b2-3144-4a6c-bb66-acb6ba10ac21: Logoleiste # Logoleiste
+    7256eccc-68c6-4b76-abc1-e48dd566fdd5: Fotos # Fotos
+    7310f25f-a5f2-4e34-a4b3-ceef5136ac33: Button # Button
+    9343d92c-fadb-4442-8f32-f6693dd2d970: Listen-Überschrift # Listen-Überschrift
+    10004a53-a0c0-4d68-8912-ba30e12ccfbb: Überschrift # Überschrift
+    43437b3d-75d4-4b0e-b865-e4164d84d2d3: Text # Text
+    180467f8-c501-45a4-b392-b569c2f5a280: Grafik(en) # Grafik(en)
+    0321669e-ecbd-4ced-9108-a896a6ec7b91: Autor # Autor
+    492211e8-4406-44ea-87eb-4b2d70ad97f5: Überschrift # Überschrift
+    653826ca-0488-40b7-80d7-ffaac3fbf704: Button # Button
+    719496d9-422d-4aad-8cc7-e5a028bf8722: 'Text | Bild od. Text' # Text | Bild od. Text
+    992877db-1e14-4433-b015-356aaf998fdf: Text # Text
+    6138880b-2c08-4a4b-a4f6-dcf40281156f: Abstand # Abstand
+    8213518d-e904-48f3-b930-be6aea7baa3c: Button # Button
+    8513723e-6250-488c-8e2a-b1541b2ad57a: Unten # Unten
+    9369270f-0e8d-4747-8e2b-1522feb5e397: Anker # Anker
+    44830673-872c-4c72-bc4b-bc0b89240fef: CTA-Text # CTA-Text
+    50822843-7888-4ecd-9a73-d860255d5c1b: 'Mit Hintergrundfarbe anzeigen' # Mit Hintergrundfarbe anzeigen
+    62774804-4122-42b1-99b4-80391e51a517: Icon # Icon
     65171297-7276-41ea-ba6d-dbb4b55fbfdc: Seiten # Seiten
+    a1b33810-c55f-436c-8328-4b8c11fa8c33: Stichzeile # Stichzeile
+    a3e0fa2c-cbd0-45b9-a99b-68823fb1d22e: 'Mit Hintergrund anzeigen' # Mit Hintergrund anzeigen
+    a22b472b-9fea-4aa5-96fd-0bfbbf80f210: Hintergrund-Farbe # Hintergrund-Farbe
+    a56c9323-21e9-4911-8f78-c2d74839cce8: Bild # Bild
+    a97eb305-0655-42a2-9730-9f4326c06a5e: Anker # Anker
+    a37069fa-3f37-43ee-bb37-7ae0b37f0f53: Anker # Anker
+    aa743709-4f8c-4453-ad66-178da072a044: Oben # Oben
+    b0b78ea9-4a92-42e5-8814-41541540f6c6: 'Überschrift Größe' # Überschrift Größe
+    b069aa75-8c64-4fd3-bcad-e4c5d906997d: Anlesetext # Anlesetext
+    b1b04b2e-e3a8-4b2a-8a11-b9fa0eb6ac93: Liste # Liste
     b6bc1140-7710-4ffd-8574-98475ed75b60: Boilerplate # Boilerplate
+    b18a48a6-252c-449a-ac3b-42840a8703b8: Icon # Icon
+    b98df073-f449-436e-a770-1a2f1ef080cc: 'Text | Liste' # Text | Liste
+    b6587341-2be4-4d27-9105-260ed18e39ea: Überschrift # Überschrift
+    bae4f2fe-7754-4d47-8062-a4b19d5c5868: Überschrift # Überschrift
     bb8805d1-ef12-494d-bbc1-8d3668cf097f: Common # Common
+    bbb97d7e-1dd2-4d3b-bfe3-772707e11cea: Link # Link
+    bcb93ae5-794c-4d5f-9718-504368d1d398: Anlesetext # Anlesetext
+    bd2703b0-bfcf-4251-a059-d8964ae97c09: Teammitglied(er) # Teammitglied(er)
     bdf7d7be-212e-4725-b11e-eddbdeaec225: 'Public Schema' # Public Schema
+    c1fd8e45-f5d1-48bd-a973-2af68a296e61: Stichzeile # Stichzeile
+    c4fc7263-c2e4-49f9-9328-d4a9342bea06: Intro # Intro
+    c8037b30-8030-488f-a7db-a5cab78ce7f5: Oben # Oben
+    c89375bd-d305-4b89-927a-f8021b892145: Anker # Anker
     c689235a-365f-4ae6-bcc5-4d1586dc6fd2: Startseite # Startseite
+    cad27486-cdd0-4d37-98fd-fad18e7487d8: Überschrift # Überschrift
+    cf5de057-3198-4bd7-b414-acc9bb572d56: Fotos # Fotos
+    d1f70a67-7072-428c-bb03-34fe69d8f46a: Liste # Liste
+    d6dbb810-148e-43a4-aeec-a9c5e66a17be: Überschrift-Größe # Überschrift-Größe
+    d7c078b2-bd2e-42d2-ba80-7d8239ccdc08: Überschrift # Überschrift
+    d41acb9e-b9d6-459b-9b46-b97002532d32: Button # Button
+    d454a9d9-799e-46b4-859c-d924f8b78829: 'Mit Hintergrund anzeigen' # Mit Hintergrund anzeigen
+    d36001ed-f63a-48a8-aba0-0eff5fc55e46: 'Bild | CTA' # Bild | CTA
+    d95722b7-f029-4c37-baa4-a7ebf25ae6b8: Text # Text
+    dc887b28-3f0a-4274-b1d8-95fe6a7c47e1: Text # Text
+    de7addaf-cbc6-46f8-a82c-3d0fdeb3fbcc: Text # Text
+    de48810d-50e7-4d60-bba7-a34e255bf3a4: Link-Elementlayout # Link-Elementlayout
+    df000915-2047-448d-9fc8-ea81850971ec: Anlesetext # Anlesetext
+    e04814c3-e107-452d-8fa4-9e6b6ad85db9: Text # Text
+    e589d3c2-7dba-4135-b43f-d5d02656d344: Überschrift # Überschrift
+    e5632a5e-ae05-47f9-a937-1431f7f01cf5: Blog-Artikel # Blog-Artikel
+    e1344430-b158-434b-8cef-dfa433f29b56: Autor # Autor
+    ed099c49-73bf-46d8-9cb8-73c4f9f83037: Foto # Foto
+    ee39c1ba-ce65-427c-ae58-308e7d56517e: Überschrift # Überschrift
+    f46dc085-05ca-468b-b359-0a9eb18aac66: Anker # Anker
+    f776aeea-582c-447a-b104-2d0cd9368131: Hintergrundgrafik # Hintergrundgrafik
+    f131501e-a413-4ae0-add2-8aa059cea708: Liste # Liste
+    f9571062-6a9d-4ecd-9db8-16f35541bc57: Abstand # Abstand
+    faf1c7fa-f3cd-48b2-afc4-7ae93eebbf5b: 'Mit Hintergrund anzeigen' # Mit Hintergrund anzeigen
+    ff788f9f-f7b9-4992-ab64-ae1f164ad5c5: Zitat-Text # Zitat-Text
 plugins:
+  field-manager:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  redactor:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.3.0
+  seo:
+    edition: standard
+    enabled: true
+    schemaVersion: 3.2.0
+  super-table:
+    edition: standard
+    enabled: true
+    schemaVersion: 3.0.0
+  typedlinkfield:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.0.0
   vite:
     edition: standard
     enabled: true

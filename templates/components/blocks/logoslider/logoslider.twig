@@ -1,0 +1,21 @@
+{% set items = items ?? block.logos.all() ?? null %}
+{% set headline = headline ?? block.headline ?? null %}
+
+<section class="py-14 md:py-28">
+    <div class="container">
+        {% if headline %}
+            <p class="topline dark mb-6">
+                {{ headline }}
+            </p>
+        {% endif %}
+        <div class="flex justify-between gap-12 items-center flex-wrap">
+            {% for logo in items %}
+                {% include '/components/elements/image/image' with {
+                    image: logo,
+                    height: 100,
+                    class: 'lazyload'
+                } %}
+            {% endfor %}
+        </div>
+    </div>
+</section>

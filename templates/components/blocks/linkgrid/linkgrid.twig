@@ -1,0 +1,41 @@
+{% set topline = topline ?? block.topline ?? null %}
+{% set headline = headline ?? block.headline ?? null %}
+{% set headlineSize = headlineSize ?? block.headlineSize ?? 'small' %}
+{% set teasertext = teasertext ?? block.teasertext ?? null %}
+{% set hasBackground = hasBackground ?? block.hasBackground ?? null %}
+{% set anchor = anchor ?? block.anchor ?? null %}
+{% set layout = layout ?? block.linkElementlayout.value ?? null %}
+{% set items = items ?? block.links.all() ?? null %}
+
+<section class="py-14 md:py-28 {{ hasBackground and layout != 'overlay' ? 'bg-two' : (layout == 'overlay' ? 'bg-black text-white') }}" {% if anchor %} id="{{ anchor }}" {% endif %}>
+    <div class="container">
+        {% if topline or headline or teasertext %}
+            <div class="mb-12">
+                {% if topline %}
+                    <span class="topline">{{ topline }}</span>
+                {% endif %}
+                {% if headline %}
+                    <h2 class="headline {{ headlineSize }} mb-4">
+                        {{ headline }}
+                    </h2>
+                {% endif %}
+                {% if teasertext %}
+                    <p class="mb-8 text-lg leading-8 max-w-xl">
+                        {{ teasertext }}
+                    </p>
+                {% endif %}
+            </div>
+        {% endif %}
+        {% if layout == 'row' or layout == 'col' %}
+            {% include '/partials/linkgrid-items/row-col' with {
+                items: items,
+                layout: layout
+            } %}
+        {% else %}
+            {% include '/partials/linkgrid-items/overlay' with {
+                items: items,
+                layout: layout
+            } %}
+        {% endif %}
+    </div>
+</section>

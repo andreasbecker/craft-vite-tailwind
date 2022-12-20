@@ -1,0 +1,21 @@
+{% set quote = quote ?? null %}
+{% set quotetext = quotetext ?? quote.quotetext ?? null %}
+{% set quoteauthor = quoteauthor ?? quote.quoteauthor ?? null %}
+{% set theme = theme ?? 'light' %}
+
+{% if quotetext %}
+    <div class="{{ theme == 'dark' ? 'text-white' : 'text-black' }}">
+        <svg width="48" height="32" viewBox="0 0 48 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M10.5991 30.5498C10.0047 31.4199 9.01415 32 7.72642 32H2.2783C1.18868 32 0.495283 31.0332 1.28774 29.9698L9.90566 16.7251H2.2783C0.792453 16.7251 0 15.9517 0 14.5982V2.12689C0 0.773414 0.792453 0 2.2783 0H18.7217C20.2075 0 21 0.773414 21 2.12689V14.5982C21 15.855 20.6038 17.2085 19.9104 18.1752L10.5991 30.5498ZM37.5991 30.5498C37.0047 31.4199 36.0142 32 34.7264 32H29.2783C28.1887 32 27.4953 31.0332 28.2877 29.9698L36.9057 16.7251H29.2783C27.7925 16.7251 27 15.9517 27 14.5982V2.12689C27 0.773414 27.7925 0 29.2783 0H45.7217C47.2075 0 48 0.773414 48 2.12689V14.5982C48 15.855 47.6038 17.2085 46.9104 18.1752L37.5991 30.5498Z"
+                fill="#E30613" />
+        </svg>
+        <div class="font-display text-lg md:text-2xl mb-4 mt-8">
+            {{ quotetext }}
+        </div>
+        {% if quoteauthor %}
+            <span class="font-bold opacity-50">{{ quoteauthor }}</span>
+        {% endif %}
+    </div>
+{% endif %}

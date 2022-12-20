@@ -1,0 +1,133 @@
+changedFieldIndicator: 2114204308
+field: 30f38a75-75e6-4097-8cf7-42f8ae0e055b # Liste
+fieldLayouts:
+  afb3d781-1188-4758-82fa-8632d77b45da:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 272f94de-e93a-4b42-b15b-dc80980aeab2 # Listen-Icon
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: bf7884d6-da8a-4a52-bf09-0c0e1516250f
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 9343d92c-fadb-4442-8f32-f6693dd2d970 # Listen-Überschrift
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 66e641c0-7620-4e3d-ae60-8b8b8dcaf5c8
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 97ace654-b6cb-4127-836e-4b22fc09eea4 # Listenelemente
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a5be3093-fdaf-46b5-a609-146e4ca48ee6
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 47b973fa-f8da-4333-b943-aaa7a1b1e9ca
+        userCondition: null
+fields:
+  97ace654-b6cb-4127-836e-4b22fc09eea4: # Listenelemente
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: items
+    instructions: null
+    name: Listenelemente
+    searchable: false
+    settings:
+      contentTable: '{{%matrixcontent_items}}'
+      maxBlocks: null
+      minBlocks: null
+      propagationKeyFormat: null
+      propagationMethod: all
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Matrix
+  272f94de-e93a-4b42-b15b-dc80980aeab2: # Listen-Icon
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: icon
+    instructions: null
+    name: Listen-Icon
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      allowSubfolders: false
+      allowUploads: true
+      allowedKinds:
+        - image
+      defaultUploadLocationSource: 'volume:60ea60f4-d351-4a83-87fb-2db87df0844a' # Medien
+      defaultUploadLocationSubpath: null
+      localizeRelations: false
+      maxRelations: 1
+      minRelations: null
+      previewMode: full
+      restrictFiles: true
+      restrictLocation: true
+      restrictedDefaultUploadSubpath: null
+      restrictedLocationSource: 'volume:60ea60f4-d351-4a83-87fb-2db87df0844a' # Medien
+      restrictedLocationSubpath: null
+      selectionCondition:
+        __assoc__:
+          -
+            - elementType
+            - craft\elements\Asset
+          -
+            - fieldContext
+            - global
+          -
+            - class
+            - craft\elements\conditions\assets\AssetCondition
+      selectionLabel: 'Icon hinzufügen'
+      showSiteMenu: true
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      source: null
+      sources: '*'
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  9343d92c-fadb-4442-8f32-f6693dd2d970: # Listen-Überschrift
+    columnSuffix: bkolqkve
+    contentColumnType: text
+    fieldGroup: null
+    handle: headline
+    instructions: null
+    name: Listen-Überschrift
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText

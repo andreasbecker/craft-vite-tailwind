@@ -1,0 +1,84 @@
+changedFieldIndicator: 897707122
+field: 41b6fcb3-7903-4934-bfd1-821b407bdb63 # Textblock
+fieldLayouts:
+  7280b775-36e3-48ed-8853-1b7810ef0b86:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 5bf7d99b-6cb1-4dcc-be01-2e4118a9b01f # Überschrift
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: bff8f4ff-5a56-4222-8808-51b7a1a5ceba
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 0e57a49f-c929-4a37-89d2-da868ffdcb94 # Text
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 0c2af8a8-a159-41a7-a120-6ed390e00e98
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 030bce1b-b16b-4ce4-8947-082dead5eef9
+        userCondition: null
+fields:
+  0e57a49f-c929-4a37-89d2-da868ffdcb94: # Text
+    columnSuffix: ppugiwjb
+    contentColumnType: text
+    fieldGroup: null
+    handle: text
+    instructions: null
+    name: Text
+    searchable: false
+    settings:
+      availableTransforms: ''
+      availableVolumes: '*'
+      columnType: text
+      configSelectionMode: choose
+      defaultTransform: ''
+      manualConfig: ''
+      purifierConfig: null
+      purifyHtml: true
+      redactorConfig: Simple.json
+      removeEmptyTags: true
+      removeInlineStyles: true
+      removeNbsp: true
+      showHtmlButtonForNonAdmins: false
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      uiMode: enlarged
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
+  5bf7d99b-6cb1-4dcc-be01-2e4118a9b01f: # Überschrift
+    columnSuffix: ybwzzvcj
+    contentColumnType: text
+    fieldGroup: null
+    handle: headline
+    instructions: null
+    name: Überschrift
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText

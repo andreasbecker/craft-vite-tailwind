@@ -1,0 +1,69 @@
+{% set topline = topline ?? block.topline ?? null %}
+{% set headline = headline ?? block.headline ?? null %}
+{% set video = video ?? block.video ?? null %}
+{% set photos = photos ?? block.photos.all() ?? null %}
+{% set list = list ?? block.list.all() ?? null %}
+{% set anchor = anchor ?? block.anchor ?? null %}
+
+{% css "https://cdn.plyr.io/3.6.12/plyr.css"%}
+
+<section class="bg-black xl:bg-half-center"{% if anchor %} id="{{ anchor }}" {% endif %}>
+    <div class="container py-14 md:py-28 flex flex-col gap-20 md:gap-32 md:flex-row xl:bg-part-left text-white">
+        <div class="md:w-3/5 text-center md:text-right flex flex-col items-center md:items-end">
+            {% if topline %}
+                <span class="topline">{{ topline }}</span>
+            {% endif %}
+            <h2 class="headline small mb-12 max-w-xs">
+                {{ headline }}
+            </h2>
+            <div class="self-center md:self-start w-full">
+                {% if video %}
+                    {% include "/components/elements/video/video" with {
+                        videoId: video
+                    } %}
+                {% else %}
+                    <div class="relative flex flex-col gap-5">
+                        {% for photo in photos %}
+                            {% set class %}
+                                {{ 'lazyload ' ~ (loop.index == 2 ? 'lg:absolute lg:left-1/2 lg:top-2/3 lg:border-4 lg:border-black') }}
+                            {% endset %}
+
+                            {% include '/components/elements/image/image' with {
+                                image: photo,
+                                width: loop.index == 2 ? 300 : 500,
+                                class: class,
+                                position: 'center-center'
+                            } %}
+                        {% endfor %}
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+        <div class="md:w-2/5">
+            {% if list %}
+                <ul class="flex flex-col gap-y-10 items-center md:items-start">
+                    {% for item in list %}
+                        <li class="flex gap-x-10 max-w-sm items-start">
+                            {% if item.icon|length %}
+                                {% include '/components/elements/image/image' with {
+                                    image: item.icon[0],
+                                    width: 35,
+                                    class: 'lazyload w-15',
+                                    position: 'center-center'
+                                } %}
+                            {% endif %}
+                            <div>
+                                <h3 class="block font-display font-bold mb-3">
+                                    {{ item.headline }}
+                                </h3>
+                                <div class="text-two opacity-50 prose">
+                                    {{ item.text }}
+                                </div>
+                            </div>
+                        </li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
+        </div>
+    </div>
+</section>

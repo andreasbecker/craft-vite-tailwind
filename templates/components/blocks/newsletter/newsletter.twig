@@ -1,0 +1,38 @@
+{% set topline = topline ?? block.topline ?? 'Newsletter abonnieren' %}
+{% set headline = headline ?? block.headline ?? null %}
+{% set photos = photos ?? block.photos.all() ?? null %}
+{% set anchor = anchor ?? block.anchor ?? null %}
+
+<section class="bg-two md:bg-twothird-top mb-14 md:mb-28" {% if anchor %} id="{{ anchor }}" {% endif %}>
+    <div class="container py-14 md:py-28 flex flex-col gap-20 md:gap-32 md:flex-row">
+        <div class="md:w-3/5 text-center md:text-left flex flex-col items-center md:items-start">
+            {% if topline %}
+                <span class="topline">{{ topline }}</span>
+            {% endif %}
+            <h2 class="headline small mb-12">
+                {{ headline }}
+            </h2>
+            <div class="self-center md:self-start w-full">
+                <div class="relative flex flex-col gap-5">
+                    {% for photo in photos %}
+                        {% set class %}
+                            {{ 'lazyload ' ~ (loop.index == 2 ? 'lg:absolute lg:left-1/2 lg:top-2/3 lg:border-4 lg:border-black') }}
+                        {% endset %}
+
+                        {% include '/components/elements/image/image' with {
+                            image: photo,
+                            width: loop.index == 2 ? 300 : 500,
+                            class: class,
+                            position: 'center-center'
+                        } %}
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+        <div class="md:w-2/5">
+            <span class="inline-block mb-4 text-xs font-bold text-gray-500">Sie wollen zu aktuellen Themen immer informiert sein?</span>
+            {% set form = craft.formie.forms.handle('newsletter').one() %}
+            {{ craft.formie.renderForm(form) }}
+        </div>
+    </div>
+</section>

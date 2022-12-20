@@ -1,0 +1,134 @@
+field: 09d2a6ba-3fed-4b21-9b93-9ae69ad011d0 # Seiten-Blöcke
+fieldLayouts:
+  4d75c8a7-b84f-488b-8010-5cfa437f3dc2:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: a3e0fa2c-cbd0-45b9-a99b-68823fb1d22e # Mit Hintergrund anzeigen
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 20f026c8-86ec-4cce-8ab7-1bac89d3d586
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: f9571062-6a9d-4ecd-9db8-16f35541bc57 # Abstand
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e62b157c-c7d5-4d6e-8da9-c18f774720f2
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: d1f70a67-7072-428c-bb03-34fe69d8f46a # Liste
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: baaec382-e51c-4a3d-a780-17870529e5f1
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 19125b8b-a7b6-46f4-8152-c6d17b9686b0
+        userCondition: null
+fields:
+  a3e0fa2c-cbd0-45b9-a99b-68823fb1d22e: # Mit Hintergrund anzeigen
+    columnSuffix: pjhvdftb
+    contentColumnType: boolean
+    fieldGroup: null
+    handle: hasBackground
+    instructions: null
+    name: 'Mit Hintergrund anzeigen'
+    searchable: false
+    settings:
+      default: false
+      offLabel: null
+      onLabel: null
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Lightswitch
+  d1f70a67-7072-428c-bb03-34fe69d8f46a: # Liste
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: list
+    instructions: null
+    name: Liste
+    searchable: false
+    settings:
+      blockTypeFields: 0
+      changedFieldIndicator: 1865918958
+      columns:
+        __assoc__:
+          -
+            - 13e93ed9-0989-4a8e-b868-a9ce781a7eb0 # Listenelement
+            -
+              __assoc__:
+                -
+                  - width
+                  - ''
+      contentTable: '{{%stc_12_list}}'
+      fieldLayout: row
+      maxRows: null
+      minRows: null
+      propagationKeyFormat: null
+      propagationMethod: all
+      selectionLabel: 'Liste hinzufügen'
+      staticField: null
+    translationKeyFormat: null
+    translationMethod: none
+    type: verbb\supertable\fields\SuperTableField
+  f9571062-6a9d-4ecd-9db8-16f35541bc57: # Abstand
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: padding
+    instructions: 'Hier kann der Abstand dieses Blocks bestimmt werden, falls die Inhalt näher oder ferner zum Vorgänger- oder Nachfolger-Block dargestellt werden sollen.'
+    name: Abstand
+    searchable: false
+    settings:
+      blockTypeFields: 0
+      changedFieldIndicator: 1365862314
+      columns:
+        __assoc__:
+          -
+            - aa743709-4f8c-4453-ad66-178da072a044 # Oben
+            -
+              __assoc__:
+                -
+                  - width
+                  - ''
+          -
+            - 8513723e-6250-488c-8e2a-b1541b2ad57a # Unten
+            -
+              __assoc__:
+                -
+                  - width
+                  - ''
+      contentTable: '{{%stc_12_padding}}'
+      fieldLayout: table
+      maxRows: null
+      minRows: null
+      propagationKeyFormat: null
+      propagationMethod: all
+      selectionLabel: null
+      staticField: true
+    translationKeyFormat: null
+    translationMethod: none
+    type: verbb\supertable\fields\SuperTableField
+handle: listoflists
+name: 'Liste aus Listen'
+sortOrder: 10

@@ -1,0 +1,40 @@
+{% set textblock = textblock ?? block.textblock ?? null %}
+{% set list = list ?? block.list ?? null %}
+{% set anchor = anchor ?? block.anchor ?? null %}
+{% set hasBackground = hasBackground ?? block.hasBackground ?? null %}
+
+<section class="py-7 md:py-14 {{ hasBackground ? 'bg-two' }}" {% if anchor %} id="{{ anchor }}" {% endif %}>
+    <div class="container flex gap-20 flex-col md:flex-row items-center">
+        <div class="md:w-1/2">
+            <h3 class="font-bold font-display mb-4">
+                {{ textblock.headline }}
+            </h3>
+            {% if textblock.text %}
+                <div class="mb-8 leading-8 opacity-50">
+                    {{ textblock.text }}
+                </div>
+            {% endif %}
+        </div>
+        <div class="md:w-1/2 flex gap-4">
+            {% if list.icon %}
+                <div class="flex-shrink-0">
+                    {% include '/components/elements/image/image' with {
+                        'image': list.icon[0],
+                        'width': 35,
+                        'class': 'lazyload'
+                    } %}
+                </div>
+            {% endif %}
+            <div>
+                {% if list.headline %}
+                    <span class="font-bold font-display block mb-4 pt-4">{{ list.headline }}</span>
+                {% endif %}
+                <ul class="divide-y divide-[#676767] opacity-50">
+                    {% for item in list.items.all() %}
+                        <li class="block py-4">{{ item.text }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>

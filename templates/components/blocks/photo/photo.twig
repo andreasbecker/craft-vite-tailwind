@@ -1,0 +1,36 @@
+{% set photo = photo ?? block.photo[0] ?? null %}
+{% set quote = quote ?? block.quote[0] ?? null %}
+{% set text = text ?? block.text ?? null %}
+{% set hasBackground = hasBackground ?? block.hasBackground ?? null %}
+
+<section class="">
+    <div class="py-14 md:py-28 {{ hasBackground != '0' ? hasBackground == 'top' ? 'bg-half-top' : 'bg-half-bottom pb-0' }}">
+        <div class="container relative">
+            {% if photo|length %}
+                {% set class %}
+                    {{ 'lazyload ' ~ (quote ? 'md:scale-95 origin-top-right') }}
+                {% endset %}
+                {% include '/components/elements/image/image' with {
+                    image: photo,
+                    width: 1200,
+                    class: class
+                } %}
+            {% endif %}
+            {% if quote %}
+                <div class="md:absolute md:bottom-0 md:left-10 p-8 md:p-14 bg-black max-w-2xl">
+                    {% include '/components/elements/quote/quote' with {
+                        quote: quote,
+                        theme: 'dark'
+                    } %}
+                </div>
+            {% endif %}
+        </div>
+    </div>
+    <div class="container">
+        {% if text %}
+            <div class="text-center md:text-left max-w-xl text-lg mx-auto mb-8">
+                {{ text }}
+            </div>
+        {% endif %}
+    </div>
+</section>

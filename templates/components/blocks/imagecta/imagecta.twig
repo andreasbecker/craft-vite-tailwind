@@ -1,0 +1,26 @@
+{% set photo = photo ?? block.photo[0] ?? null %}
+{% set text = text ?? block.ctaText ?? null %}
+{% set hasBackground = hasBackground ?? block.hasBackground ?? null %}
+{% set button = button ?? block.button ?? null %}
+
+<section class="py-14 md:py-28 {{ hasBackground != '0' ? hasBackground == 'top' ? 'bg-half-top' : 'bg-half-bottom pb-0 md:pb-0' }}">
+    <div class="container flex flex-col lg:flex-row">
+        <div class="lg:w-2/3">
+            {% if (photo|length) > 0 %}
+                {% include '/components/elements/image/image' with {
+                    image: photo,
+                    width: 800,
+                    class: 'lazyload'
+                } %}
+            {% endif %}
+        </div>
+        <div class="lg:w-1/3 bg-black p-16 rounded-md self-center lg:-translate-x-14 lg:translate-y-14">
+            <p class="font-display font-bold text-2xl text-white mb-8">
+                {{ text }}
+            </p>
+            {% if button.url %}
+                <a href="{{ button.url }}" class="btn on-dark">{{ button.text }}</a>
+            {% endif %}
+        </div>
+    </div>
+</section>

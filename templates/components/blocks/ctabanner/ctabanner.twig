@@ -1,0 +1,26 @@
+{% set text = text ?? block.text ?? null %}
+{% set backgroundimage = backgroundimage ?? block.backgroundimage.one() ?? null %}
+{% set backgroundimageUrl %}
+    {% spaceless %}
+        {% include '/components/elements/image/image' with {
+            'image': backgroundimage,
+            'width': 800,
+            'quality': 90,
+            'urlOnly': true
+        } %}
+    {% endspaceless %}
+{% endset %}
+{% set button = button ?? block.button ?? null %}
+
+<section class="py-14 md:py-28 bg-no-repeat bg-cover bg-center bg-black bg-blend-overlay text-white lazyload" {% if backgroundimage %} data-bg="{{ backgroundimageUrl }}{% endif %}">
+    <div class="container grid gap-10 md:grid-cols-12">
+        {% if text %}
+            <div class="md:col-span-7 font-display text-2xl text-center md:text-left">
+                {{ text }}
+            </div>
+        {% endif %}
+        <div class="md:col-span-5 text-center">
+            <a href="{{ button.url }}" class="btn on-dark">{{ button.text }}</a>
+        </div>
+    </div>
+</section>

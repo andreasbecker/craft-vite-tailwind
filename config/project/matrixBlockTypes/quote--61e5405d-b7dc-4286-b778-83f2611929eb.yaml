@@ -1,0 +1,64 @@
+field: 09d2a6ba-3fed-4b21-9b93-9ae69ad011d0 # Seiten-Blöcke
+fieldLayouts:
+  bf9df5eb-4bfe-436e-961d-0284b2e484d1:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 3ef6cc21-9bd2-4149-9a1f-9abaaa6bcdc3 # Zitat
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e7388b71-54c1-44f9-8ca2-bd4abf8ae9e6
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: dd6b699d-0e23-4192-82f0-cdf65a9f2d87
+        userCondition: null
+fields:
+  3ef6cc21-9bd2-4149-9a1f-9abaaa6bcdc3: # Zitat
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: quote
+    instructions: null
+    name: Zitat
+    searchable: false
+    settings:
+      blockTypeFields: 0
+      changedFieldIndicator: 1640202125
+      columns:
+        __assoc__:
+          -
+            - ff788f9f-f7b9-4992-ab64-ae1f164ad5c5 # Zitat-Text
+            -
+              __assoc__:
+                -
+                  - width
+                  - ''
+          -
+            - e1344430-b158-434b-8cef-dfa433f29b56 # Autor
+            -
+              __assoc__:
+                -
+                  - width
+                  - ''
+      contentTable: '{{%stc_22_quote}}'
+      fieldLayout: row
+      maxRows: 1
+      minRows: null
+      propagationKeyFormat: null
+      propagationMethod: all
+      selectionLabel: 'Zitat hinzufügen'
+      staticField: true
+    translationKeyFormat: null
+    translationMethod: none
+    type: verbb\supertable\fields\SuperTableField
+handle: quote
+name: Zitat
+sortOrder: 18

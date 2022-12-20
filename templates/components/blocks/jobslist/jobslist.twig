@@ -1,0 +1,33 @@
+{% set items = items ?? block.jobs.all() ?? null %}
+{% set anchor = anchor ?? block.anchor ?? null %}
+
+{% if not items %}
+    {% set items = craft.entries.section('jobs').all() %}
+{% endif %}
+
+{% if items %}
+    <section class="container py-14 md:py-28" {% if anchor %} id="{{ anchor }}" {% endif %}>
+        <div class="mx-auto max-w-5xl">
+            <p class="topline dark">
+                {{ 'Unsere Stellenangebote'|t }}
+            </p>
+            <div class="group">
+                {% for item in items %}
+                    <div class="shadow-[0_1px_0_0_rgba(0,0,0,0.1)] group-hover:shadow-none">
+                        <div class="flex flex-col md:flex-row gap-3 md:items-center border-2 border-transparent py-10 md:p-10 md:hover:shadow-xl md:hover:border-2 md:hover:border-slate-200 rounded-md transition">
+                            <div class="md:w-8/12">
+                                <span class="block font-display font-bold mb-4 text-lg">{{ item.title }}</span>
+                                {% if item.teasertext %}
+                                    <span class="text-xs font-bold">{{item.teasertext}}</span>
+                                {% endif %}
+                            </div>
+                            <div class="md:w-4/12 md:text-right flex items-center md:justify-end">
+                                <a href="{{ item.externalLink }}" target="_blank" class="btn block">{{ 'Jetzt bewerben'|t }}</a>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+{% endif %}

@@ -1,0 +1,331 @@
+field: 09d2a6ba-3fed-4b21-9b93-9ae69ad011d0 # Seiten-Blöcke
+fieldLayouts:
+  a6cffe60-d5c2-4dd8-8148-92a200df683f:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 60e2c80d-7fa5-48d7-9c9a-a1e1267f3ff5 # Mit Hintergrund anzeigen
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 233f93e5-5276-4443-ae35-f51a8f3d8067
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: a37069fa-3f37-43ee-bb37-7ae0b37f0f53 # Anker
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 56ed38d7-22d4-478d-9ec3-b79c794014d8
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: c1fd8e45-f5d1-48bd-a973-2af68a296e61 # Stichzeile
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 375f80fa-6f2f-43ad-b059-518b62c03ff0
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 492211e8-4406-44ea-87eb-4b2d70ad97f5 # Überschrift
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: dd11fcfc-f121-4a8e-9a4e-c48ace11c249
+            userCondition: null
+            warning: null
+            width: 75
+          -
+            elementCondition: null
+            fieldUid: 299ef98d-6a0f-4c54-be63-d62d99987b34 # Überschrift-Größe
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ec4479f4-8067-430a-8a5a-d66ecef63911
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            elementCondition: null
+            fieldUid: df000915-2047-448d-9fc8-ea81850971ec # Anlesetext
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a9281921-a906-493c-998f-3510ff9a0971
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: de48810d-50e7-4d60-bba7-a34e255bf3a4 # Link-Elementlayout
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c221035f-c2ec-436f-b386-030f8ae1ef46
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 4ddc5c9a-3ca5-4302-8e23-1d2f86d1ffb7 # Links
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b9a3d8b6-e832-4cd7-ae75-fd2738532ac7
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: fa684dcd-efe2-4c0f-ba4f-b2d3a281ce6a
+        userCondition: null
+fields:
+  4ddc5c9a-3ca5-4302-8e23-1d2f86d1ffb7: # Links
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: links
+    instructions: null
+    name: Links
+    searchable: false
+    settings:
+      blockTypeFields: 0
+      changedFieldIndicator: 408072304
+      columns:
+        __assoc__:
+          -
+            - bbb97d7e-1dd2-4d3b-bfe3-772707e11cea # Link
+            -
+              __assoc__:
+                -
+                  - width
+                  - ''
+          -
+            - 30c358ff-d041-4f46-9dd8-a2837a0016da # Grafik
+            -
+              __assoc__:
+                -
+                  - width
+                  - ''
+          -
+            - b069aa75-8c64-4fd3-bcad-e4c5d906997d # Anlesetext
+            -
+              __assoc__:
+                -
+                  - width
+                  - ''
+      contentTable: '{{%stc_16_links}}'
+      fieldLayout: row
+      maxRows: null
+      minRows: null
+      propagationKeyFormat: null
+      propagationMethod: all
+      selectionLabel: 'Link hinzufügen'
+      staticField: null
+    translationKeyFormat: null
+    translationMethod: none
+    type: verbb\supertable\fields\SuperTableField
+  60e2c80d-7fa5-48d7-9c9a-a1e1267f3ff5: # Mit Hintergrund anzeigen
+    columnSuffix: lgkkeqlq
+    contentColumnType: boolean
+    fieldGroup: null
+    handle: hasBackground
+    instructions: null
+    name: 'Mit Hintergrund anzeigen'
+    searchable: false
+    settings:
+      default: false
+      offLabel: null
+      onLabel: null
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Lightswitch
+  299ef98d-6a0f-4c54-be63-d62d99987b34: # Überschrift-Größe
+    columnSuffix: ukibdmgm
+    contentColumnType: string
+    fieldGroup: null
+    handle: headlineSize
+    instructions: null
+    name: Überschrift-Größe
+    searchable: false
+    settings:
+      options:
+        -
+          __assoc__:
+            -
+              - label
+              - Klein
+            -
+              - value
+              - small
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Groß
+            -
+              - value
+              - large
+            -
+              - default
+              - ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Dropdown
+  492211e8-4406-44ea-87eb-4b2d70ad97f5: # Überschrift
+    columnSuffix: dhbbbdmm
+    contentColumnType: text
+    fieldGroup: null
+    handle: headline
+    instructions: null
+    name: Überschrift
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  a37069fa-3f37-43ee-bb37-7ae0b37f0f53: # Anker
+    columnSuffix: qhicgsbs
+    contentColumnType: text
+    fieldGroup: null
+    handle: anchor
+    instructions: 'Hier können Sie eine Anker-ID angeben, z. B. `schulungen`. Sie können dann in einem anderen Block auf diesen Anker verweisen, z. B. https://becker-gruppe.com/lernen#schulungen'
+    name: Anker
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  c1fd8e45-f5d1-48bd-a973-2af68a296e61: # Stichzeile
+    columnSuffix: bnglsoyp
+    contentColumnType: text
+    fieldGroup: null
+    handle: topline
+    instructions: null
+    name: Stichzeile
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  de48810d-50e7-4d60-bba7-a34e255bf3a4: # Link-Elementlayout
+    columnSuffix: ihxfwprf
+    contentColumnType: string
+    fieldGroup: null
+    handle: linkElementlayout
+    instructions: "`Quer`: Bild und Text werden auf großen Bildschirmen nebeneinander angezeigt.\r\n`Hochkant`: Das Bild wird immer über dem Text angezeigt\r\n`Überlagert`: Das Bild wird vom Text überlagert"
+    name: Link-Elementlayout
+    searchable: false
+    settings:
+      options:
+        -
+          __assoc__:
+            -
+              - label
+              - Quer
+            -
+              - value
+              - row
+            -
+              - default
+              - '1'
+        -
+          __assoc__:
+            -
+              - label
+              - Hochkant
+            -
+              - value
+              - col
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Überlagert
+            -
+              - value
+              - overlay
+            -
+              - default
+              - ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\RadioButtons
+  df000915-2047-448d-9fc8-ea81850971ec: # Anlesetext
+    columnSuffix: hszndlne
+    contentColumnType: text
+    fieldGroup: null
+    handle: teasertext
+    instructions: null
+    name: Anlesetext
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: linkgrid
+name: Link-Gitter
+sortOrder: 13

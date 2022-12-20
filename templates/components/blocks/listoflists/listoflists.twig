@@ -1,0 +1,16 @@
+{% set items = items ?? block.list.all() ?? null %}
+{% set hasBackground = hasBackground ?? block.hasBackground ?? null %}
+{% set paddingTop = paddingTop ?? block.padding.top ?? 'normal' %}
+{% set paddingBottom = paddingBottom ?? block.padding.bottom ?? 'normal' %}
+{% set anchor = anchor ?? block.anchor ?? null %}
+
+<section class="{{ paddingTop == 'normal' ? 'pt-14 md:pt-28' }} {{ paddingBottom == 'normal' ? 'pb-14 md:pb-28' }} {{ hasBackground ? 'bg-two' }}"{% if anchor %} id="{{ anchor }}" {% endif %}>
+    <div class="container grid gap-10 md:grid-cols-2">
+        {% for item in items %}
+            {% set listelement = item.listelement.one() %}
+            {% include '/components/elements/list/list' with {
+                listElement: listelement
+            } %}
+        {% endfor %}
+    </div>
+</section>

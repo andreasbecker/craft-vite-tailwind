@@ -1,0 +1,12 @@
+{% set text = text ?? block.richtext ?? null %}
+{% set hasBackground = hasBackground ?? block.hasBackground ?? null %}
+{% set paddingTop = paddingTop ?? block.padding.top ?? 'normal' %}
+{% set paddingBottom = paddingBottom ?? block.padding.bottom ?? 'normal' %}
+
+<section class="{{ paddingTop == 'normal' ? 'pt-14 md:pt-28' }} {{ paddingBottom == 'normal' ? 'pb-14 md:pb-28' }} {{ hasBackground ? 'bg-two' }}">
+    <div class="container flex gap-20 flex-col md:flex-row items-center justify-center">
+        <div class="max-w-3xl prose">
+            {{ text }}
+        </div>
+    </div>
+</section>

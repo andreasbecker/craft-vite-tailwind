@@ -3,10 +3,13 @@
   "description": "Craft CMS with Vite and TailwindCSS",
   "license": "Unlicense",
   "require": {
-    "craftcms/cms": "^4.0.0",
+    "craftcms/cms": "4.3.5",
     "craftcms/redactor": "^3.0",
     "ether/seo": "^4.0",
     "nystudio107/craft-vite": "4.0.3",
+    "sebastianlenz/linkfield": "^2.1",
+    "verbb/field-manager": "^3.0",
+    "verbb/super-table": "3.0.7",
     "vlucas/phpdotenv": "^3.4.0"
   },
   "require-dev": {

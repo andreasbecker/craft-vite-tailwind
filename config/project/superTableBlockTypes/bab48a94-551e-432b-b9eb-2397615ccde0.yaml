@@ -1,0 +1,41 @@
+changedFieldIndicator: 291655758
+field: d1f70a67-7072-428c-bb03-34fe69d8f46a # Liste
+fieldLayouts:
+  8656d109-cecd-4ffa-8e1b-9523a447d7a9:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 13e93ed9-0989-4a8e-b868-a9ce781a7eb0 # Listenelement
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: da57a635-8a24-41ea-9726-1fa6dbc57c01
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 4c21e9bf-9e18-460e-8a25-ea276c8db269
+        userCondition: null
+fields:
+  13e93ed9-0989-4a8e-b868-a9ce781a7eb0: # Listenelement
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: listelement
+    instructions: null
+    name: Listenelement
+    searchable: false
+    settings:
+      contentTable: '{{%matrixcontent_listelement}}'
+      maxBlocks: 1
+      minBlocks: 1
+      propagationKeyFormat: null
+      propagationMethod: all
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Matrix

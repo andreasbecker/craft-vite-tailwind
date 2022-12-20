@@ -1,0 +1,18 @@
+{% extends '_layout' %} {% block content %}
+    {% include 'partials/header' %}
+
+    <section class="editor container mx-auto pb-16">
+        {{ entry.title }}
+    </section>
+
+    {% if entry.pageBlocks %}
+        {% import 'macros' as macros %} {{
+            macros.renderPageBlocks({
+                blocks: entry.pageBlocks.all(),
+                entry: entry|default
+            })
+        }}
+    {% endif %}
+
+    {% include 'partials/footer' %}
+{% endblock %}
