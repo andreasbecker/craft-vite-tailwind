@@ -10,8 +10,8 @@
 
 use craft\helpers\App;
 
-$isDev = App::env('ENVIRONMENT') === 'dev';
-$isProd = App::env('ENVIRONMENT') === 'production';
+$isDev = App::env('CRAFT_ENVIRONMENT') === 'dev';
+$isProd = App::env('CRAFT_ENVIRONMENT') === 'production';
 
 $__headers__ = [];
 
@@ -63,5 +63,6 @@ return [
         '@basePath' => $_SERVER['DOCUMENT_ROOT'] . DIRECTORY_SEPARATOR,
         '@baseUrl' => $__proto__ . $__host__,
         '@uploadsUrl' => '@baseUrl/uploads',
+        '@web' => App::env('PRIMARY_SITE_URL')
     ],
 ];
